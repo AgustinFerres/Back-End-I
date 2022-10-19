@@ -6,8 +6,10 @@ public class CompruebaCalidad {
 
         cadena = new AnalistaLote();
 
-        cadena.setSiguienteAnalista(new AnalistaPeso());
-        cadena.setSiguienteAnalista(new AnalistaEnvase());
+        AnalistaCalidad analistaPeso = new AnalistaPeso();
+
+        cadena.setSiguienteAnalista(analistaPeso);
+        analistaPeso.setSiguienteAnalista(new AnalistaEnvase());
     }
 
     public String checkArticulo (Articulo art){

@@ -18,7 +18,7 @@ public class calidadTest {
     @Test
     public void casoRechazado(){
 
-        Articulo articulo = new Articulo("papa", 500, 1250, "sano");
+        Articulo articulo = new Articulo("papa", 1250, 1250, "normal");
 
         CompruebaCalidad compruebaCalidad = new CompruebaCalidad();
 
