@@ -1,3 +1,5 @@
+package menu;
+
 public class MenuInfantil extends Menu{
 
     private Integer cantidadJuguetes;

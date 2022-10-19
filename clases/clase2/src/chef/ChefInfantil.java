@@ -1,3 +1,7 @@
+package chef;
+import menu.*;
+
+
 public class ChefInfantil extends Chef{
 
     public ChefInfantil() {
@@ -7,7 +11,7 @@ public class ChefInfantil extends Chef{
     protected String armar(Menu menu) {
         String respuesta = "";
 
-        if (menu instanceof  MenuInfantil){
+        if (menu instanceof MenuInfantil){
 
             MenuInfantil inf = (MenuInfantil) menu;
 

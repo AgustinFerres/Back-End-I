@@ -1,3 +1,7 @@
+package chef;
+import menu.*;
+
+
 public abstract class Chef {
 
     public Chef() {

@@ -1,3 +1,5 @@
+package menu;
+
 public abstract class  Menu {
 
     private Double precioBase;

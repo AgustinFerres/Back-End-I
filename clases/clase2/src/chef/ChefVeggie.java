@@ -1,3 +1,5 @@
+package chef;
+import menu.*;
 public class ChefVeggie extends Chef{
 
     public ChefVeggie() {
@@ -8,7 +10,7 @@ public class ChefVeggie extends Chef{
 
         String respuesta = "";
 
-        if (menu instanceof  MenuVeggie){
+        if (menu instanceof MenuVeggie){
 
             MenuVeggie veg = (MenuVeggie) menu;
 
@@ -29,7 +31,7 @@ public class ChefVeggie extends Chef{
 
         Double respuesta = 0.0;
 
-        if (menu instanceof  MenuVeggie) {
+        if (menu instanceof MenuVeggie) {
 
             MenuVeggie veg = (MenuVeggie) menu;
             if (veg.getEspecias()){

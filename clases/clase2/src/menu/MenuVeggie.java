@@ -1,3 +1,5 @@
+package menu;
+
 public class MenuVeggie extends Menu{
 
     private Integer cantidadSalsas;

@@ -1,3 +1,7 @@
+package chef;
+import menu.*;
+
+
 public class ChefClasico extends Chef{
 
     public ChefClasico() {
