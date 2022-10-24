@@ -23,6 +23,6 @@ public class Bosque {
         }
 
         Runtime runtime = Runtime.getRuntime();
-        System.out.println("Memoria usada: " + (runtime.totalMemory() - runtime.freeMemory()) / (1024 * 1024) + " " + contador);
+        System.out.println("Memoria usada: " + (runtime.totalMemory() - runtime.freeMemory()) / (1024 * 1024) + "\nCantidad de arboles plantados: " + contador);
     }
 }
