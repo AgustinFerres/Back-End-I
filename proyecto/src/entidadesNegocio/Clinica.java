@@ -1,5 +1,7 @@
 package entidadesNegocio;
 
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,6 +17,27 @@ public class Clinica {
         turnos = new ArrayList<>();
     }
 
+    public Turno darTurno(Paciente p, LocalDate date, LocalTime hour, Odontologo o) throws ClinicaException {
+        if (!pacientes.contains(p)){
+            throw new ClinicaException("Primero tienes que registarte");
+        }
+        if (!odontologos.contains(o)){
+            throw new ClinicaException("Ese odontologo no esta nuestro sistema");
+        }
+        if (estaOcupado(new Turno(o,p,date, hour))){
+            throw new ClinicaException("Ese horario esta ocupado, por favor elija otro");
+        }
+        turnos.add(new Turno(o,p,date, hour));
+        return turnos.get(turnos.size() - 1);
+    }
+    private Boolean estaOcupado(Turno t){
+        for (Turno turno : turnos) {
+            if (turno.equals(t)){
+                return true;
+            }
+        }
+        return false;
+    }
     public List<Odontologo> getOdontologos() {
         return odontologos;
     }

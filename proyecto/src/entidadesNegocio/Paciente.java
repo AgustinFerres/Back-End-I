@@ -1,17 +1,18 @@
 package entidadesNegocio;
 
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class Paciente extends Persona{
 
     private String domicilio;
     private String dni;
-    private Date fechaAlta;
+    private LocalDate fechaAlta;
     private List<Turno> turnos;
 
-    public Paciente(String nombre, String apellido, String domicilio, String dni, Date fechaAlta) {
+    public Paciente(String nombre, String apellido, String domicilio, String dni, LocalDate fechaAlta) {
         super(nombre, apellido);
         this.domicilio = domicilio;
         this.dni = dni;
@@ -19,14 +20,27 @@ public class Paciente extends Persona{
         turnos = new ArrayList<>();
     }
 
-    public String hacerReserva(Clinica c, Odontologo o, Date fecha, Date hora){
+    public void hacerReserva(Clinica c, Odontologo o, LocalDate fecha, LocalTime hora){
         try {
-            Turno turno = new Turno(c, o, this, fecha, hora);
-        } catch (TurnoException e) {
-            throw new RuntimeException(e);
+            turnos.add(c.darTurno(this, fecha, hora , o));
+        } catch (ClinicaException e) {
+            e.printStackTrace();
         }
-        return "Se a completado su reserva";
     }
 
+    public String getDomicilio() {
+        return domicilio;
+    }
 
+    public String getDni() {
+        return dni;
+    }
+
+    public LocalDate getFechaAlta() {
+        return fechaAlta;
+    }
+
+    public List<Turno> getTurnos() {
+        return turnos;
+    }
 }

@@ -1,34 +1,27 @@
 package entidadesNegocio;
 
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.Date;
 
 public class Turno {
 
     private Odontologo odontologo;
     private Paciente paciente;
-    private Date fecha;
-    private Date hora;
+    private LocalDate fecha;
+    private LocalTime hora;
 
-    public Turno(Clinica c,Odontologo odontologo, Paciente paciente, Date fecha, Date hora) throws TurnoException {
-        if (estaOcupado(c,odontologo,paciente,fecha,hora)){
-            throw new TurnoException("Este horario esta ocupado");
-        }
-
+    public Turno(Odontologo odontologo, Paciente paciente, LocalDate fecha, LocalTime hora){
         this.odontologo = odontologo;
         this.paciente = paciente;
         this.fecha = fecha;
         this.hora = hora;
     }
 
-
-    private Boolean estaOcupado(Clinica c, Odontologo o, Paciente p, Date fecha, Date hora){
-        boolean respuesta = false;
-        try {
-            respuesta = c.getTurnos().contains(new Turno(c,o,p,fecha,hora));
-        } catch (TurnoException e) {
-            e.printStackTrace();
-        }
-        return respuesta;
+    @Override
+    public boolean equals(Object obj) {
+        Turno t = (Turno) obj;
+        return  this.odontologo.equals(t.odontologo) && this.fecha.equals(t.fecha) && this.hora.equals(t.hora);
     }
 
     public Odontologo getOdontologo() {
@@ -47,19 +40,19 @@ public class Turno {
         this.paciente = paciente;
     }
 
-    public Date getFecha() {
+    public LocalDate getFecha() {
         return fecha;
     }
 
-    public void setFecha(Date fecha) {
+    public void setFecha(LocalDate fecha) {
         this.fecha = fecha;
     }
 
-    public Date getHora() {
+    public LocalTime getHora() {
         return hora;
     }
 
-    public void setHora(Date hora) {
+    public void setHora(LocalTime hora) {
         this.hora = hora;
     }
 }
