@@ -1,0 +1,4 @@
+[2022-11-02 14:12:47] [ INFO ] [PacienteDaoH2:26] Se inició un pedido de incorporación de paciente
+[2022-11-02 14:12:47] [ INFO ] [DomicilioDaoH2:22] Se inició un pedido de incorporación de domicilio
+[2022-11-02 14:12:47] [ INFO ] [PacienteDaoH2:81] Se inició un pedido de busqueda de paciente
+[2022-11-02 14:12:47] [ INFO ] [DomicilioDaoH2:71] Se inició un pedido de busqueda de domicilio
