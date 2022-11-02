@@ -19,7 +19,7 @@ public class PacienteDaoH2 implements Dao<Paciente>{
     private static final String SQL_INSERT_WITHOUT_ID = "INSERT INTO PACIENTE " +
             "VALUES (DEFAULT,?,?,?,?, ?)";
     private static final String SQL_INSERT_WITH_ID = "INSERT INTO PACIENTE " +
-            "VALUES (?,?,?,?,?, ?)";
+            "VALUES (?,?,?,?,?,?)";
     private static final String SQL_SELECT = "SELECT * FROM PACIENTE WHERE ID = ?";
     @Override
     public Paciente guardar(Paciente paciente) {
@@ -36,7 +36,7 @@ public class PacienteDaoH2 implements Dao<Paciente>{
                 psInsert.setString(1, paciente.getApellido());
                 psInsert.setString(2, paciente.getNombre());
                 psInsert.setString(3, paciente.getDni());
-                psInsert.setDate(4, paciente.getFechaIngreso());
+                psInsert.setObject(4, paciente.getFechaIngreso());
                 domicilioDaoH2.guardar(paciente.getDomicilio());
                 psInsert.setInt(5, paciente.getDomicilio().getId());
                 psInsert.execute();
@@ -52,7 +52,7 @@ public class PacienteDaoH2 implements Dao<Paciente>{
                 psInsert.setString(2,paciente.getApellido());
                 psInsert.setString(3, paciente.getNombre());
                 psInsert.setString(4, paciente.getDni());
-                psInsert.setDate(5, paciente.getFechaIngreso());
+                psInsert.setObject(5, paciente.getFechaIngreso());
                 psInsert.setInt(6, paciente.getDomicilio().getId());
                 psInsert.execute();
 
@@ -93,7 +93,7 @@ public class PacienteDaoH2 implements Dao<Paciente>{
 
             ResultSet rs = psSelect.getResultSet();
             while (rs.next()){
-                paciente = new Paciente(rs.getInt(1), rs.getString(2),rs.getString(3),rs.getString(4),  rs.getDate(5), domicilioDaoH2.buscar(rs.getInt(6)));
+                paciente = new Paciente(rs.getInt(1), rs.getString(2),rs.getString(3),rs.getString(4),  rs.getDate(5).toLocalDate(), domicilioDaoH2.buscar(rs.getInt(6)));
 
             }
 

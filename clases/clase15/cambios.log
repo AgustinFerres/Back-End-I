@@ -2,3 +2,13 @@
 [2022-11-02 14:12:47] [ INFO ] [DomicilioDaoH2:22] Se inició un pedido de incorporación de domicilio
 [2022-11-02 14:12:47] [ INFO ] [PacienteDaoH2:81] Se inició un pedido de busqueda de paciente
 [2022-11-02 14:12:47] [ INFO ] [DomicilioDaoH2:71] Se inició un pedido de busqueda de domicilio
+[2022-11-02 14:44:44] [ INFO ] [PacienteDaoH2:26] Se inició un pedido de incorporación de paciente
+[2022-11-02 14:44:44] [ ERROR] [PacienteDaoH2:64] Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-212]
+[2022-11-02 14:44:44] [ ERROR] [PacienteDaoH2:72] Cannot invoke "java.sql.Connection.close()" because "connection" is null
+[2022-11-02 14:44:44] [ INFO ] [PacienteDaoH2:81] Se inició un pedido de busqueda de paciente
+[2022-11-02 14:44:44] [ ERROR] [PacienteDaoH2:102] Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-212]
+[2022-11-02 14:44:44] [ ERROR] [PacienteDaoH2:110] Cannot invoke "java.sql.Connection.close()" because "connection" is null
+[2022-11-02 14:44:52] [ INFO ] [PacienteDaoH2:26] Se inició un pedido de incorporación de paciente
+[2022-11-02 14:44:52] [ INFO ] [DomicilioDaoH2:22] Se inició un pedido de incorporación de domicilio
+[2022-11-02 14:44:52] [ INFO ] [PacienteDaoH2:81] Se inició un pedido de busqueda de paciente
+[2022-11-02 14:44:52] [ INFO ] [DomicilioDaoH2:71] Se inició un pedido de busqueda de domicilio
