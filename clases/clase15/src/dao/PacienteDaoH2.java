@@ -24,7 +24,7 @@ public class PacienteDaoH2 implements Dao<Paciente>{
         System.out.println("Se inició un pedido de incorporación de paciente");
         //va el código que realizabamos con anteriodad
         //ahora la información está en paciente como parametro
-        Connection connection=null;
+        Connection connection = null;
         try{
             //conectarme a la base
             connection=BD.getConnection();
@@ -36,7 +36,6 @@ public class PacienteDaoH2 implements Dao<Paciente>{
                 psInsert.setString(3, paciente.getDni());
                 psInsert.setDate(4, paciente.getFechaIngreso());
                 domicilioDaoH2.guardar(paciente.getDomicilio());
-
                 psInsert.setInt(5, paciente.getDomicilio().getId());
                 psInsert.execute();
 

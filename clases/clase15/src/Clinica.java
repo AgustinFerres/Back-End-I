@@ -15,7 +15,7 @@ public class Clinica {
         PacienteService pacienteService = new PacienteService();
 
         BD.crearTablas();
-        Domicilio domicilio = new Domicilio(1,"San Martin", 2312, "Cordoba", "Cordoba");
+        Domicilio domicilio = new Domicilio("San Martin", 2312, "Cordoba", "Cordoba");
         Paciente paciente = new Paciente("Paredes", "Javier", "35885841", new Date(2022 - 1900,9,9), domicilio);
         pacienteService.guardar(paciente);
         String respActual = pacienteService.buscar(1).toString();

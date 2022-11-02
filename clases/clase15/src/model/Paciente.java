@@ -22,7 +22,7 @@ public class Paciente {
     }
 
     public Paciente(String apellido, String nombre, String dni, Date fechaIngreso, Domicilio domicilio) {
-        this.id = 0;
+        this.id = null;
         this.apellido = apellido;
         this.nombre = nombre;
         this.dni = dni;

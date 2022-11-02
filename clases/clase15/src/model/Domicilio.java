@@ -18,6 +18,7 @@ public class Domicilio {
     }
 
     public Domicilio(String calle, Integer numero, String localidad, String provincia) {
+        this.id = null;
         this.calle = calle;
         this.numero = numero;
         this.localidad = localidad;
