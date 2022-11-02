@@ -14,9 +14,9 @@ public class PacienteDaoH2 implements Dao<Paciente>{
         this.domicilioDaoH2 = new DomicilioDaoH2();
     }
 
-    public static final String SQL_INSERT="INSERT INTO PACIENTE " +
+    private static final String SQL_INSERT="INSERT INTO PACIENTE " +
             "VALUES (?,?,?,?,?, ?)";
-    public static final String SQL_SELECT = "SELECT * FROM PACIENTE WHERE ID = ?";
+    private static final String SQL_SELECT = "SELECT * FROM PACIENTE WHERE ID = ?";
     @Override
     public Paciente guardar(Paciente paciente) {
         System.out.println("Se inició un pedido de incorporación de paciente");
