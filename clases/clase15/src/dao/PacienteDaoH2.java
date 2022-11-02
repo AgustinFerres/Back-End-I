@@ -1,6 +1,7 @@
 package dao;
 
 import model.Paciente;
+import org.apache.log4j.Logger;
 
 import java.sql.*;
 import java.time.LocalDate;
@@ -9,6 +10,7 @@ import java.util.List;
 public class PacienteDaoH2 implements Dao<Paciente>{
 
     private DomicilioDaoH2 domicilioDaoH2;
+    private static final Logger LOGGER= Logger.getLogger(PacienteDaoH2.class);
 
     public PacienteDaoH2() {
         this.domicilioDaoH2 = new DomicilioDaoH2();
@@ -21,7 +23,7 @@ public class PacienteDaoH2 implements Dao<Paciente>{
     private static final String SQL_SELECT = "SELECT * FROM PACIENTE WHERE ID = ?";
     @Override
     public Paciente guardar(Paciente paciente) {
-        System.out.println("Se inició un pedido de incorporación de paciente");
+        LOGGER.info("Se inició un pedido de incorporación de paciente");
         //va el código que realizabamos con anteriodad
         //ahora la información está en paciente como parametro
         Connection connection = null;
@@ -59,6 +61,7 @@ public class PacienteDaoH2 implements Dao<Paciente>{
 
         }
         catch (Exception e){
+            LOGGER.error(e.getMessage());
             e.printStackTrace();
         }
         finally {
@@ -66,6 +69,7 @@ public class PacienteDaoH2 implements Dao<Paciente>{
                 connection.close();
             }
             catch (Exception ex){
+                LOGGER.error(ex.getMessage());
                 ex.printStackTrace();
             }
         }
@@ -74,7 +78,7 @@ public class PacienteDaoH2 implements Dao<Paciente>{
 
     @Override
     public Paciente buscar(Integer id) {
-        System.out.println("Se inició un pedido de busqueda de paciente");
+        LOGGER.info("Se inició un pedido de busqueda de paciente");
         //va el código que realizabamos con anteriodad
         //ahora la información está en paciente como parametro
         Connection connection=null;
@@ -95,6 +99,7 @@ public class PacienteDaoH2 implements Dao<Paciente>{
 
         }
         catch (Exception e){
+            LOGGER.error(e.getMessage());
             e.printStackTrace();
         }
         finally {
@@ -102,6 +107,7 @@ public class PacienteDaoH2 implements Dao<Paciente>{
                 connection.close();
             }
             catch (Exception ex){
+                LOGGER.error(ex.getMessage());
                 ex.printStackTrace();
             }
         }

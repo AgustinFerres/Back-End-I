@@ -11,7 +11,7 @@ import java.time.LocalDate;
 public class Clinica {
 
     @Test
-    public void caso1 (){
+    public void casoGuardar (){
         PacienteService pacienteService = new PacienteService();
 
         BD.crearTablas();

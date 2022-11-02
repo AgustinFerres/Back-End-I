@@ -1,6 +1,7 @@
 package dao;
 
 import model.Domicilio;
+import org.apache.log4j.Logger;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,6 +11,7 @@ import java.util.List;
 
 public class DomicilioDaoH2 implements Dao<Domicilio>{
 
+    private static final Logger LOGGER= Logger.getLogger(DomicilioDaoH2.class);
     private static final String SQL_INSERT_WITHOUT_ID = "INSERT INTO DOMICILIO " +
             "VALUES (DEFAULT,?,?,?,?)";
     private static final String SQL_INSERT_WITH_ID = "INSERT INTO DOMICILIO " +
@@ -17,7 +19,7 @@ public class DomicilioDaoH2 implements Dao<Domicilio>{
     private static final String SQL_SELECT = "SELECT * FROM DOMICILIO WHERE ID = ?";
     @Override
     public Domicilio guardar(Domicilio domicilio) {
-        System.out.println("Se inició un pedido de incorporación de domicilio");
+        LOGGER.info("Se inició un pedido de incorporación de domicilio");
         //va el código que realizabamos con anteriodad
         //ahora la información está en domicilio como parametro
         Connection connection=null;
@@ -49,6 +51,7 @@ public class DomicilioDaoH2 implements Dao<Domicilio>{
             }
         }
         catch (Exception e){
+            LOGGER.error(e.getMessage());
             e.printStackTrace();
         }
         finally {
@@ -56,6 +59,7 @@ public class DomicilioDaoH2 implements Dao<Domicilio>{
                 connection.close();
             }
             catch (Exception ex){
+                LOGGER.error(ex.getMessage());
                 ex.printStackTrace();
             }
         }
@@ -64,7 +68,7 @@ public class DomicilioDaoH2 implements Dao<Domicilio>{
 
     @Override
     public Domicilio buscar(Integer id) {
-        System.out.println("Se inició un pedido de busqueda de domicilio");
+        LOGGER.info("Se inició un pedido de busqueda de domicilio");
         //va el código que realizabamos con anteriodad
         //ahora la información está en domicilio como parametro
         Connection connection=null;
@@ -85,6 +89,7 @@ public class DomicilioDaoH2 implements Dao<Domicilio>{
 
         }
         catch (Exception e){
+            LOGGER.error(e.getMessage());
             e.printStackTrace();
         }
         finally {
@@ -92,6 +97,7 @@ public class DomicilioDaoH2 implements Dao<Domicilio>{
                 connection.close();
             }
             catch (Exception ex){
+                LOGGER.error(ex.getMessage());
                 ex.printStackTrace();
             }
         }
