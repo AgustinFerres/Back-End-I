@@ -9,7 +9,7 @@ public class BD {
     public static Connection getConnection() throws Exception{
         Class.forName("org.h2.Driver");
         return DriverManager.getConnection(
-                "jdbc:h2:~/clase15","sa"
+                "jdbc:h2:~/clase16","sa"
                 ,"sa");
     }
     public static void crearTablas(){

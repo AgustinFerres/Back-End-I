@@ -21,6 +21,7 @@ public class PacienteDaoH2 implements Dao<Paciente>{
     private static final String SQL_INSERT_WITH_ID = "INSERT INTO PACIENTE " +
             "VALUES (?,?,?,?,?,?)";
     private static final String SQL_SELECT = "SELECT * FROM PACIENTE WHERE ID = ?";
+    private static final String SQL_UDPATE = "UPDATE PACIENTE SET APELLIDO = ?, NOMBRE = ?, DNI = ?, FECHAINGRESO = ?,  ID_DOMICILIO = ? WHERE ID = ?";
     @Override
     public Paciente guardar(Paciente paciente) {
         LOGGER.info("Se inició un pedido de incorporación de paciente");
@@ -81,12 +82,11 @@ public class PacienteDaoH2 implements Dao<Paciente>{
         LOGGER.info("Se inició un pedido de busqueda de paciente");
         //va el código que realizabamos con anteriodad
         //ahora la información está en paciente como parametro
-        Connection connection=null;
+        Connection connection = null;
         Paciente paciente = null;
         try{
             //conectarme a la base
             connection=BD.getConnection();
-            Statement statement = connection.createStatement();
             PreparedStatement psSelect= connection.prepareStatement(SQL_SELECT);
             psSelect.setInt(1, id);
             psSelect.execute();
@@ -116,7 +116,38 @@ public class PacienteDaoH2 implements Dao<Paciente>{
 
     @Override
     public void actualizar(Paciente paciente) {
+        LOGGER.info("Se inició un pedido de update de paciente");
+        //va el código que realizabamos con anteriodad
+        //ahora la información está en paciente como parametro
+        Connection connection = null;
+        try{
+            //conectarme a la base
 
+            connection=BD.getConnection();
+            PreparedStatement psSelect= connection.prepareStatement(SQL_UDPATE);
+            psSelect.setString(1, paciente.getApellido());
+            psSelect.setString(2, paciente.getNombre());
+            psSelect.setString(3, paciente.getDni());
+            psSelect.setObject(4, paciente.getFechaIngreso());
+            domicilioDaoH2.actualizar(paciente.getDomicilio());
+            psSelect.setInt(5, paciente.getDomicilio().getId());
+            psSelect.setInt(6, paciente.getId());
+            psSelect.execute();
+
+        }
+        catch (Exception e){
+            LOGGER.error(e.getMessage());
+            e.printStackTrace();
+        }
+        finally {
+            try{
+                connection.close();
+            }
+            catch (Exception ex){
+                LOGGER.error(ex.getMessage());
+                ex.printStackTrace();
+            }
+        }
     }
 
     @Override

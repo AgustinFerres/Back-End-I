@@ -17,4 +17,8 @@ public class PacienteService {
     public Paciente buscar(Integer id){
         return pacienteDao.buscar(id);
     }
+
+    public void actualizar(Paciente paciente){
+        pacienteDao.actualizar(paciente);
+    }
 }

@@ -17,6 +17,7 @@ public class DomicilioDaoH2 implements Dao<Domicilio>{
     private static final String SQL_INSERT_WITH_ID = "INSERT INTO DOMICILIO " +
             "VALUES (?,?,?,?,?)";
     private static final String SQL_SELECT = "SELECT * FROM DOMICILIO WHERE ID = ?";
+    private static final String SQL_UDPATE = "UPDATE DOMICILIO SET CALLE = ?, NUMERO = ?, LOCALIDAD = ?, PROVINCIA = ? WHERE ID = ?";
     @Override
     public Domicilio guardar(Domicilio domicilio) {
         LOGGER.info("Se inició un pedido de incorporación de domicilio");
@@ -76,7 +77,6 @@ public class DomicilioDaoH2 implements Dao<Domicilio>{
         try{
             //conectarme a la base
             connection=BD.getConnection();
-            Statement statement = connection.createStatement();
             PreparedStatement psSelect= connection.prepareStatement(SQL_SELECT);
             psSelect.setInt(1, id);
             psSelect.execute();
@@ -106,7 +106,36 @@ public class DomicilioDaoH2 implements Dao<Domicilio>{
 
     @Override
     public void actualizar(Domicilio domicilio) {
+        LOGGER.info("Se inició un pedido de update de domicilio");
+        //va el código que realizabamos con anteriodad
+        //ahora la información está en domicilio como parametro
+        Connection connection=null;
+        try{
+            //conectarme a la base
 
+            connection=BD.getConnection();
+            PreparedStatement psSelect= connection.prepareStatement(SQL_UDPATE);
+            psSelect.setString(1, domicilio.getCalle());
+            psSelect.setInt(2, domicilio.getNumero());
+            psSelect.setString(3, domicilio.getLocalidad());
+            psSelect.setString(4, domicilio.getProvincia());
+            psSelect.setInt(5, domicilio.getId());
+            psSelect.execute();
+
+        }
+        catch (Exception e){
+            LOGGER.error(e.getMessage());
+            e.printStackTrace();
+        }
+        finally {
+            try{
+                connection.close();
+            }
+            catch (Exception ex){
+                LOGGER.error(ex.getMessage());
+                ex.printStackTrace();
+            }
+        }
     }
 
     @Override

@@ -25,4 +25,17 @@ public class Clinica {
         Assertions.assertEquals(respEsperada,respActual);
 
     }
+    @Test
+    public void casoActualizar (){
+        PacienteService pacienteService = new PacienteService();
+
+        Domicilio domicilio = new Domicilio(1,"Artigas", 2312, "Rivera", "Rivera");
+        Paciente paciente = new Paciente(1,"Alvarez", "Gonzalo", "35885841", LocalDate.of(2022,10,9), domicilio);
+        pacienteService.actualizar(paciente);
+        String respActual = pacienteService.buscar(1).toString();
+        String respEsperada = "Gonzalo Alvarez\n" +
+                "DNI: 35885841 Alta: 2022-10-09\n" +
+                "Vive en: Rivera, Rivera, Artigas 2312";
+        Assertions.assertEquals(respEsperada,respActual);
+    }
 }

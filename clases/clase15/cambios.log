@@ -12,3 +12,157 @@
 [2022-11-02 14:44:52] [ INFO ] [DomicilioDaoH2:22] Se inició un pedido de incorporación de domicilio
 [2022-11-02 14:44:52] [ INFO ] [PacienteDaoH2:81] Se inició un pedido de busqueda de paciente
 [2022-11-02 14:44:52] [ INFO ] [DomicilioDaoH2:71] Se inició un pedido de busqueda de domicilio
+[2022-11-02 15:16:39] [ INFO ] [PacienteDaoH2:119] Se inició un pedido de update de paciente
+[2022-11-02 15:16:40] [ ERROR] [PacienteDaoH2:139] Syntax error in SQL statement "UPDATE [*]FROM PACIENTE SET APELLIDO = ?, NOMBRE = ?, DNI = ?, FECHAINGRESO = ?,  ID_DOMICILIO = ? WHERE ID = ?"; expected "identifier"; SQL statement:
+UPDATE FROM PACIENTE SET APELLIDO = ?, NOMBRE = ?, DNI = ?, FECHAINGRESO = ?,  ID_DOMICILIO = ? WHERE ID = ? [42001-212]
+[2022-11-02 15:16:40] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:16:40] [ INFO ] [PacienteDaoH2:27] Se inició un pedido de incorporación de paciente
+[2022-11-02 15:16:40] [ INFO ] [DomicilioDaoH2:23] Se inició un pedido de incorporación de domicilio
+[2022-11-02 15:16:40] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:16:40] [ INFO ] [DomicilioDaoH2:72] Se inició un pedido de busqueda de domicilio
+[2022-11-02 15:17:47] [ INFO ] [PacienteDaoH2:119] Se inició un pedido de update de paciente
+[2022-11-02 15:17:47] [ INFO ] [DomicilioDaoH2:109] Se inició un pedido de update de domicilio
+[2022-11-02 15:17:47] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:17:47] [ INFO ] [PacienteDaoH2:27] Se inició un pedido de incorporación de paciente
+[2022-11-02 15:17:47] [ INFO ] [DomicilioDaoH2:23] Se inició un pedido de incorporación de domicilio
+[2022-11-02 15:17:47] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:17:47] [ INFO ] [DomicilioDaoH2:72] Se inició un pedido de busqueda de domicilio
+[2022-11-02 15:20:08] [ INFO ] [PacienteDaoH2:119] Se inició un pedido de update de paciente
+[2022-11-02 15:20:08] [ ERROR] [PacienteDaoH2:139] Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-212]
+[2022-11-02 15:20:08] [ ERROR] [PacienteDaoH2:147] Cannot invoke "java.sql.Connection.close()" because "connection" is null
+[2022-11-02 15:20:08] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:20:08] [ ERROR] [PacienteDaoH2:102] Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-212]
+[2022-11-02 15:20:08] [ ERROR] [PacienteDaoH2:110] Cannot invoke "java.sql.Connection.close()" because "connection" is null
+[2022-11-02 15:20:16] [ INFO ] [PacienteDaoH2:119] Se inició un pedido de update de paciente
+[2022-11-02 15:20:16] [ INFO ] [DomicilioDaoH2:109] Se inició un pedido de update de domicilio
+[2022-11-02 15:20:16] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:21:33] [ INFO ] [PacienteDaoH2:119] Se inició un pedido de update de paciente
+[2022-11-02 15:21:33] [ INFO ] [DomicilioDaoH2:109] Se inició un pedido de update de domicilio
+[2022-11-02 15:21:53] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:25:52] [ INFO ] [PacienteDaoH2:119] Se inició un pedido de update de paciente
+[2022-11-02 15:25:52] [ INFO ] [DomicilioDaoH2:109] Se inició un pedido de update de domicilio
+[2022-11-02 15:25:52] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:26:03] [ INFO ] [PacienteDaoH2:119] Se inició un pedido de update de paciente
+[2022-11-02 15:26:03] [ INFO ] [DomicilioDaoH2:109] Se inició un pedido de update de domicilio
+[2022-11-02 15:26:03] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:26:17] [ INFO ] [PacienteDaoH2:119] Se inició un pedido de update de paciente
+[2022-11-02 15:26:17] [ INFO ] [DomicilioDaoH2:109] Se inició un pedido de update de domicilio
+[2022-11-02 15:26:17] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:26:20] [ INFO ] [PacienteDaoH2:119] Se inició un pedido de update de paciente
+[2022-11-02 15:26:20] [ INFO ] [DomicilioDaoH2:109] Se inició un pedido de update de domicilio
+[2022-11-02 15:26:20] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:26:20] [ INFO ] [PacienteDaoH2:27] Se inició un pedido de incorporación de paciente
+[2022-11-02 15:26:20] [ INFO ] [DomicilioDaoH2:23] Se inició un pedido de incorporación de domicilio
+[2022-11-02 15:26:20] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:26:20] [ INFO ] [DomicilioDaoH2:72] Se inició un pedido de busqueda de domicilio
+[2022-11-02 15:26:31] [ INFO ] [PacienteDaoH2:119] Se inició un pedido de update de paciente
+[2022-11-02 15:26:31] [ INFO ] [DomicilioDaoH2:109] Se inició un pedido de update de domicilio
+[2022-11-02 15:26:31] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:26:31] [ INFO ] [PacienteDaoH2:27] Se inició un pedido de incorporación de paciente
+[2022-11-02 15:26:31] [ INFO ] [DomicilioDaoH2:23] Se inició un pedido de incorporación de domicilio
+[2022-11-02 15:26:31] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:26:31] [ INFO ] [DomicilioDaoH2:72] Se inició un pedido de busqueda de domicilio
+[2022-11-02 15:26:36] [ INFO ] [PacienteDaoH2:119] Se inició un pedido de update de paciente
+[2022-11-02 15:26:36] [ INFO ] [DomicilioDaoH2:109] Se inició un pedido de update de domicilio
+[2022-11-02 15:26:36] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:26:36] [ INFO ] [PacienteDaoH2:27] Se inició un pedido de incorporación de paciente
+[2022-11-02 15:26:36] [ INFO ] [DomicilioDaoH2:23] Se inició un pedido de incorporación de domicilio
+[2022-11-02 15:26:44] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:27:01] [ INFO ] [DomicilioDaoH2:72] Se inició un pedido de busqueda de domicilio
+[2022-11-02 15:27:19] [ INFO ] [PacienteDaoH2:119] Se inició un pedido de update de paciente
+[2022-11-02 15:27:19] [ INFO ] [DomicilioDaoH2:109] Se inició un pedido de update de domicilio
+[2022-11-02 15:27:24] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:28:45] [ INFO ] [PacienteDaoH2:119] Se inició un pedido de update de paciente
+[2022-11-02 15:28:45] [ INFO ] [DomicilioDaoH2:109] Se inició un pedido de update de domicilio
+[2022-11-02 15:28:50] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:31:32] [ INFO ] [PacienteDaoH2:27] Se inició un pedido de incorporación de paciente
+[2022-11-02 15:31:32] [ INFO ] [DomicilioDaoH2:23] Se inició un pedido de incorporación de domicilio
+[2022-11-02 15:31:32] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:31:32] [ INFO ] [PacienteDaoH2:27] Se inició un pedido de incorporación de paciente
+[2022-11-02 15:31:32] [ INFO ] [DomicilioDaoH2:23] Se inició un pedido de incorporación de domicilio
+[2022-11-02 15:31:32] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:31:32] [ INFO ] [DomicilioDaoH2:72] Se inició un pedido de busqueda de domicilio
+[2022-11-02 15:32:10] [ INFO ] [PacienteDaoH2:27] Se inició un pedido de incorporación de paciente
+[2022-11-02 15:32:10] [ ERROR] [PacienteDaoH2:65] Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-212]
+[2022-11-02 15:32:10] [ ERROR] [PacienteDaoH2:73] Cannot invoke "java.sql.Connection.close()" because "connection" is null
+[2022-11-02 15:32:10] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:32:10] [ ERROR] [PacienteDaoH2:102] Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-212]
+[2022-11-02 15:32:10] [ ERROR] [PacienteDaoH2:110] Cannot invoke "java.sql.Connection.close()" because "connection" is null
+[2022-11-02 15:32:10] [ INFO ] [PacienteDaoH2:27] Se inició un pedido de incorporación de paciente
+[2022-11-02 15:32:10] [ ERROR] [PacienteDaoH2:65] Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-212]
+[2022-11-02 15:32:10] [ ERROR] [PacienteDaoH2:73] Cannot invoke "java.sql.Connection.close()" because "connection" is null
+[2022-11-02 15:32:10] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:32:10] [ ERROR] [PacienteDaoH2:102] Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-212]
+[2022-11-02 15:32:10] [ ERROR] [PacienteDaoH2:110] Cannot invoke "java.sql.Connection.close()" because "connection" is null
+[2022-11-02 15:32:16] [ INFO ] [PacienteDaoH2:27] Se inició un pedido de incorporación de paciente
+[2022-11-02 15:32:16] [ INFO ] [DomicilioDaoH2:23] Se inició un pedido de incorporación de domicilio
+[2022-11-02 15:32:16] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:32:16] [ INFO ] [DomicilioDaoH2:72] Se inició un pedido de busqueda de domicilio
+[2022-11-02 15:32:16] [ INFO ] [PacienteDaoH2:27] Se inició un pedido de incorporación de paciente
+[2022-11-02 15:32:16] [ INFO ] [DomicilioDaoH2:23] Se inició un pedido de incorporación de domicilio
+[2022-11-02 15:32:16] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:32:16] [ INFO ] [DomicilioDaoH2:72] Se inició un pedido de busqueda de domicilio
+[2022-11-02 15:33:03] [ INFO ] [PacienteDaoH2:27] Se inició un pedido de incorporación de paciente
+[2022-11-02 15:33:04] [ INFO ] [DomicilioDaoH2:23] Se inició un pedido de incorporación de domicilio
+[2022-11-02 15:33:04] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:33:04] [ INFO ] [DomicilioDaoH2:72] Se inició un pedido de busqueda de domicilio
+[2022-11-02 15:33:04] [ INFO ] [PacienteDaoH2:27] Se inició un pedido de incorporación de paciente
+[2022-11-02 15:33:04] [ INFO ] [DomicilioDaoH2:23] Se inició un pedido de incorporación de domicilio
+[2022-11-02 15:33:04] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:33:04] [ INFO ] [DomicilioDaoH2:72] Se inició un pedido de busqueda de domicilio
+[2022-11-02 15:33:21] [ INFO ] [PacienteDaoH2:119] Se inició un pedido de update de paciente
+[2022-11-02 15:33:21] [ INFO ] [DomicilioDaoH2:109] Se inició un pedido de update de domicilio
+[2022-11-02 15:33:21] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:33:21] [ INFO ] [DomicilioDaoH2:72] Se inició un pedido de busqueda de domicilio
+[2022-11-02 15:33:21] [ INFO ] [PacienteDaoH2:27] Se inició un pedido de incorporación de paciente
+[2022-11-02 15:33:21] [ INFO ] [DomicilioDaoH2:23] Se inició un pedido de incorporación de domicilio
+[2022-11-02 15:33:21] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:33:21] [ INFO ] [DomicilioDaoH2:72] Se inició un pedido de busqueda de domicilio
+[2022-11-02 15:34:10] [ INFO ] [PacienteDaoH2:119] Se inició un pedido de update de paciente
+[2022-11-02 15:34:10] [ ERROR] [PacienteDaoH2:139] Table "PACIENTE" not found (this database is empty); SQL statement:
+UPDATE PACIENTE SET APELLIDO = ?, NOMBRE = ?, DNI = ?, FECHAINGRESO = ?,  ID_DOMICILIO = ? WHERE ID = ? [42104-212]
+[2022-11-02 15:34:10] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:34:10] [ ERROR] [PacienteDaoH2:102] Table "PACIENTE" not found (this database is empty); SQL statement:
+SELECT * FROM PACIENTE WHERE ID = ? [42104-212]
+[2022-11-02 15:34:10] [ INFO ] [PacienteDaoH2:27] Se inició un pedido de incorporación de paciente
+[2022-11-02 15:34:10] [ INFO ] [DomicilioDaoH2:23] Se inició un pedido de incorporación de domicilio
+[2022-11-02 15:34:10] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:34:10] [ INFO ] [DomicilioDaoH2:72] Se inició un pedido de busqueda de domicilio
+[2022-11-02 15:34:36] [ INFO ] [PacienteDaoH2:119] Se inició un pedido de update de paciente
+[2022-11-02 15:34:37] [ INFO ] [DomicilioDaoH2:109] Se inició un pedido de update de domicilio
+[2022-11-02 15:34:37] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:34:37] [ INFO ] [DomicilioDaoH2:72] Se inició un pedido de busqueda de domicilio
+[2022-11-02 15:34:37] [ INFO ] [PacienteDaoH2:27] Se inició un pedido de incorporación de paciente
+[2022-11-02 15:34:37] [ INFO ] [DomicilioDaoH2:23] Se inició un pedido de incorporación de domicilio
+[2022-11-02 15:34:37] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:34:37] [ INFO ] [DomicilioDaoH2:72] Se inició un pedido de busqueda de domicilio
+[2022-11-02 15:35:20] [ INFO ] [PacienteDaoH2:119] Se inició un pedido de update de paciente
+[2022-11-02 15:35:20] [ ERROR] [PacienteDaoH2:139] Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-212]
+[2022-11-02 15:35:20] [ ERROR] [PacienteDaoH2:147] Cannot invoke "java.sql.Connection.close()" because "connection" is null
+[2022-11-02 15:35:20] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:35:20] [ ERROR] [PacienteDaoH2:102] Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-212]
+[2022-11-02 15:35:20] [ ERROR] [PacienteDaoH2:110] Cannot invoke "java.sql.Connection.close()" because "connection" is null
+[2022-11-02 15:35:27] [ INFO ] [PacienteDaoH2:119] Se inició un pedido de update de paciente
+[2022-11-02 15:35:27] [ INFO ] [DomicilioDaoH2:109] Se inició un pedido de update de domicilio
+[2022-11-02 15:35:27] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:35:27] [ INFO ] [DomicilioDaoH2:72] Se inició un pedido de busqueda de domicilio
+[2022-11-02 15:36:16] [ INFO ] [PacienteDaoH2:119] Se inició un pedido de update de paciente
+[2022-11-02 15:36:16] [ ERROR] [PacienteDaoH2:139] Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-212]
+[2022-11-02 15:36:16] [ ERROR] [PacienteDaoH2:147] Cannot invoke "java.sql.Connection.close()" because "connection" is null
+[2022-11-02 15:36:16] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:36:16] [ ERROR] [PacienteDaoH2:102] Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-212]
+[2022-11-02 15:36:16] [ ERROR] [PacienteDaoH2:110] Cannot invoke "java.sql.Connection.close()" because "connection" is null
+[2022-11-02 15:36:16] [ INFO ] [PacienteDaoH2:27] Se inició un pedido de incorporación de paciente
+[2022-11-02 15:36:16] [ ERROR] [PacienteDaoH2:65] Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-212]
+[2022-11-02 15:36:16] [ ERROR] [PacienteDaoH2:73] Cannot invoke "java.sql.Connection.close()" because "connection" is null
+[2022-11-02 15:36:16] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:36:16] [ ERROR] [PacienteDaoH2:102] Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-212]
+[2022-11-02 15:36:16] [ ERROR] [PacienteDaoH2:110] Cannot invoke "java.sql.Connection.close()" because "connection" is null
+[2022-11-02 15:36:23] [ INFO ] [PacienteDaoH2:119] Se inició un pedido de update de paciente
+[2022-11-02 15:36:24] [ INFO ] [DomicilioDaoH2:109] Se inició un pedido de update de domicilio
+[2022-11-02 15:36:24] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:36:24] [ INFO ] [DomicilioDaoH2:72] Se inició un pedido de busqueda de domicilio
+[2022-11-02 15:36:24] [ INFO ] [PacienteDaoH2:27] Se inició un pedido de incorporación de paciente
+[2022-11-02 15:36:24] [ INFO ] [DomicilioDaoH2:23] Se inició un pedido de incorporación de domicilio
+[2022-11-02 15:36:24] [ INFO ] [PacienteDaoH2:82] Se inició un pedido de busqueda de paciente
+[2022-11-02 15:36:24] [ INFO ] [DomicilioDaoH2:72] Se inició un pedido de busqueda de domicilio
