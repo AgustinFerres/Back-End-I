@@ -10,8 +10,8 @@ import java.util.List;
 
 public class DomicilioDaoH2 implements Dao<Domicilio>{
 
-    private static final String SQL_INSERT="INSERT INTO DOMICILIO " +
-            "VALUES (?,?,?,?,?)";
+    private static final String SQL_INSERT = "INSERT INTO DOMICILIO " +
+            "VALUES (DEFAULT,?,?,?,?)";
     private static final String SQL_SELECT = "SELECT * FROM DOMICILIO WHERE ID = ?";
     @Override
     public Domicilio guardar(Domicilio domicilio) {
@@ -25,11 +25,10 @@ public class DomicilioDaoH2 implements Dao<Domicilio>{
             //insertar
             PreparedStatement psInsert= connection.prepareStatement(
                     SQL_INSERT);
-            psInsert.setInt(1,domicilio.getId());
-            psInsert.setString(2,domicilio.getCalle());
-            psInsert.setInt(3, domicilio.getNumero());
-            psInsert.setString(4, domicilio.getLocalidad());
-            psInsert.setObject(5, domicilio.getProvincia());
+            psInsert.setString(1,domicilio.getCalle());
+            psInsert.setInt(2, domicilio.getNumero());
+            psInsert.setString(3, domicilio.getLocalidad());
+            psInsert.setObject(4, domicilio.getProvincia());
             psInsert.execute();
         }
         catch (Exception e){

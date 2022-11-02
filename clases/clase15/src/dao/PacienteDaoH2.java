@@ -14,7 +14,9 @@ public class PacienteDaoH2 implements Dao<Paciente>{
         this.domicilioDaoH2 = new DomicilioDaoH2();
     }
 
-    private static final String SQL_INSERT="INSERT INTO PACIENTE " +
+    private static final String SQL_INSERT_WITHOUT_ID = "INSERT INTO PACIENTE " +
+            "VALUES (DEFAULT,?,?,?,?, ?)";
+    private static final String SQL_INSERT_WITH_ID = "INSERT INTO PACIENTE " +
             "VALUES (?,?,?,?,?, ?)";
     private static final String SQL_SELECT = "SELECT * FROM PACIENTE WHERE ID = ?";
     @Override
@@ -27,16 +29,29 @@ public class PacienteDaoH2 implements Dao<Paciente>{
             //conectarme a la base
             connection=BD.getConnection();
             //insertar
-            PreparedStatement psInsert = connection.prepareStatement(SQL_INSERT);
-            psInsert.setInt(1,paciente.getId());
-            psInsert.setString(2,paciente.getApellido());
-            psInsert.setString(3, paciente.getNombre());
-            psInsert.setString(4, paciente.getDni());
-            psInsert.setDate(5, paciente.getFechaIngreso());
-            psInsert.setInt(6,paciente.getDomicilio().getId());
-            psInsert.execute();
+            if (paciente.getId() == null){
+                PreparedStatement psInsert = connection.prepareStatement(SQL_INSERT_WITHOUT_ID);
+                psInsert.setString(1, paciente.getApellido());
+                psInsert.setString(2, paciente.getNombre());
+                psInsert.setString(3, paciente.getDni());
+                psInsert.setDate(4, paciente.getFechaIngreso());
+                psInsert.setInt(5, paciente.getDomicilio().getId());
+                psInsert.execute();
 
-            domicilioDaoH2.guardar(paciente.getDomicilio());
+                domicilioDaoH2.guardar(paciente.getDomicilio());
+            }else {
+                PreparedStatement psInsert = connection.prepareStatement(SQL_INSERT_WITH_ID);
+                psInsert.setInt(1, paciente.getId());
+                psInsert.setString(2,paciente.getApellido());
+                psInsert.setString(3, paciente.getNombre());
+                psInsert.setString(4, paciente.getDni());
+                psInsert.setDate(5, paciente.getFechaIngreso());
+                psInsert.setInt(6, paciente.getDomicilio().getId());
+                psInsert.execute();
+
+                domicilioDaoH2.guardar(paciente.getDomicilio());
+            }
+
         }
         catch (Exception e){
             e.printStackTrace();
