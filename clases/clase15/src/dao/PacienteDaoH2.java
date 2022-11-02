@@ -8,9 +8,15 @@ import java.util.List;
 
 public class PacienteDaoH2 implements Dao<Paciente>{
 
-    private static final String SQL_INSERT="INSERT INTO PACIENTE " +
+    private DomicilioDaoH2 domicilioDaoH2;
+
+    public PacienteDaoH2() {
+        this.domicilioDaoH2 = new DomicilioDaoH2();
+    }
+
+    public static final String SQL_INSERT="INSERT INTO PACIENTE " +
             "VALUES (?,?,?,?,?, ?)";
-    private static final String SQL_SELECT = "SELECT * FROM PACIENTE WHERE ID = ?";
+    public static final String SQL_SELECT = "SELECT * FROM PACIENTE WHERE ID = ?";
     @Override
     public Paciente guardar(Paciente paciente) {
         System.out.println("Se inició un pedido de incorporación de paciente");
@@ -21,8 +27,7 @@ public class PacienteDaoH2 implements Dao<Paciente>{
             //conectarme a la base
             connection=BD.getConnection();
             //insertar
-            PreparedStatement psInsert= connection.prepareStatement(
-                    SQL_INSERT);
+            PreparedStatement psInsert = connection.prepareStatement(SQL_INSERT);
             psInsert.setInt(1,paciente.getId());
             psInsert.setString(2,paciente.getApellido());
             psInsert.setString(3, paciente.getNombre());
@@ -30,6 +35,8 @@ public class PacienteDaoH2 implements Dao<Paciente>{
             psInsert.setDate(5, paciente.getFechaIngreso());
             psInsert.setInt(6,paciente.getDomicilio().getId());
             psInsert.execute();
+
+            domicilioDaoH2.guardar(paciente.getDomicilio());
         }
         catch (Exception e){
             e.printStackTrace();
@@ -52,7 +59,6 @@ public class PacienteDaoH2 implements Dao<Paciente>{
         //ahora la información está en paciente como parametro
         Connection connection=null;
         Paciente paciente = null;
-        DomicilioDaoH2 domicilioDaoH2 = new DomicilioDaoH2();
         try{
             //conectarme a la base
             connection=BD.getConnection();

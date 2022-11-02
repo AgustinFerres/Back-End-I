@@ -10,9 +10,9 @@ import java.util.List;
 
 public class DomicilioDaoH2 implements Dao<Domicilio>{
 
-    private static final String SQL_INSERT="INSERT INTO DOMICILIO " +
+    public static final String SQL_INSERT="INSERT INTO DOMICILIO " +
             "VALUES (?,?,?,?,?)";
-    private static final String SQL_SELECT = "SELECT * FROM DOMICILIO WHERE ID = ?";
+    public static final String SQL_SELECT = "SELECT * FROM DOMICILIO WHERE ID = ?";
     @Override
     public Domicilio guardar(Domicilio domicilio) {
         System.out.println("Se inició un pedido de incorporación de domicilio");
