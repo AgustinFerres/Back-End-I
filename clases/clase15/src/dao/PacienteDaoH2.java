@@ -1,10 +1,12 @@
 package dao;
 
+import model.Domicilio;
 import model.Paciente;
 import org.apache.log4j.Logger;
 
 import java.sql.*;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 public class PacienteDaoH2 implements Dao<Paciente>{
@@ -16,12 +18,13 @@ public class PacienteDaoH2 implements Dao<Paciente>{
         this.domicilioDaoH2 = new DomicilioDaoH2();
     }
 
-    private static final String SQL_INSERT_WITHOUT_ID = "INSERT INTO PACIENTE " +
-            "VALUES (DEFAULT,?,?,?,?, ?)";
-    private static final String SQL_INSERT_WITH_ID = "INSERT INTO PACIENTE " +
-            "VALUES (?,?,?,?,?,?)";
+    private static final String SQL_INSERT_WITHOUT_ID = "INSERT INTO PACIENTE VALUES (DEFAULT,?,?,?,?, ?)";
+    private static final String SQL_INSERT_WITH_ID = "INSERT INTO PACIENTE VALUES (?,?,?,?,?,?)";
     private static final String SQL_SELECT = "SELECT * FROM PACIENTE WHERE ID = ?";
     private static final String SQL_UDPATE = "UPDATE PACIENTE SET APELLIDO = ?, NOMBRE = ?, DNI = ?, FECHAINGRESO = ?,  ID_DOMICILIO = ? WHERE ID = ?";
+    private static final String SQL_DELETE = "DELETE FROM PACIENTE WHERE ID = ?";
+    private static final String SQL_SELECT_ALL = "SELECT * FROM PACIENTE";
+
     @Override
     public Paciente guardar(Paciente paciente) {
         LOGGER.info("Se inició un pedido de incorporación de paciente");
@@ -151,12 +154,67 @@ public class PacienteDaoH2 implements Dao<Paciente>{
     }
 
     @Override
-    public void eliminar(Paciente paciente) {
+    public void eliminar(Integer id) {
+        LOGGER.info("Se inició un pedido de delete de paciente");
+        //va el código que realizabamos con anteriodad
+        //ahora la información está en paciente como parametro
+        Connection connection=null;
+        try{
+            //conectarme a la base
 
+            connection=BD.getConnection();
+            PreparedStatement psSelect = connection.prepareStatement(SQL_DELETE);
+            psSelect.setInt(1, id);
+            psSelect.execute();
+            LOGGER.warn("Se elimino el paciente de id " + id);
+        }
+        catch (Exception e){
+            LOGGER.error(e.getMessage());
+            e.printStackTrace();
+        }
+        finally {
+            try{
+                connection.close();
+            }
+            catch (Exception ex){
+                LOGGER.error(ex.getMessage());
+                ex.printStackTrace();
+            }
+        }
     }
 
     @Override
     public List<Paciente> buscarTodo() {
-        return null;
+        List<Paciente> pacientes = new ArrayList<>();
+        Connection connection=null;
+        LOGGER.info("Iniciando la busqueda de todos los pacientes");
+        try{
+            connection=BD.getConnection();
+            Paciente paciente = null;
+
+            PreparedStatement psSelectAll=connection.prepareStatement(SQL_SELECT_ALL);
+
+            ResultSet rs=psSelectAll.executeQuery();
+            while(rs.next()){
+                //completar el paciente
+                paciente = new Paciente(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getDate(5).toLocalDate(),domicilioDaoH2.buscar(rs.getInt(6)));
+                //incorporar el paciente
+                pacientes.add(paciente);
+            }
+        }
+        catch (Exception e){
+            LOGGER.error(e.getMessage());
+            e.printStackTrace();
+        }
+        finally {
+            try{
+                connection.close();
+            }
+            catch (SQLException ex){
+                LOGGER.error(ex.getMessage());
+                ex.printStackTrace();
+            }
+        }
+        return pacientes;
     }
 }
