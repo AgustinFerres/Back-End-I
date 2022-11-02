@@ -30,15 +30,21 @@ public class PacienteDaoH2 implements Dao<Paciente>{
             connection=BD.getConnection();
             //insertar
             if (paciente.getId() == null){
-                PreparedStatement psInsert = connection.prepareStatement(SQL_INSERT_WITHOUT_ID);
+                PreparedStatement psInsert = connection.prepareStatement(SQL_INSERT_WITHOUT_ID, Statement.RETURN_GENERATED_KEYS);
                 psInsert.setString(1, paciente.getApellido());
                 psInsert.setString(2, paciente.getNombre());
                 psInsert.setString(3, paciente.getDni());
                 psInsert.setDate(4, paciente.getFechaIngreso());
+                domicilioDaoH2.guardar(paciente.getDomicilio());
+
                 psInsert.setInt(5, paciente.getDomicilio().getId());
                 psInsert.execute();
 
-                domicilioDaoH2.guardar(paciente.getDomicilio());
+                ResultSet rs = psInsert.getGeneratedKeys();
+                while (rs.next()){
+                    paciente.setId(rs.getInt(1));
+                }
+
             }else {
                 PreparedStatement psInsert = connection.prepareStatement(SQL_INSERT_WITH_ID);
                 psInsert.setInt(1, paciente.getId());
