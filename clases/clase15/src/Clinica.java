@@ -37,7 +37,7 @@ public class Clinica {
 
         pacienteService.actualizar(paciente);
 
-        String respActual = pacienteService.buscar(1).toString();
+        String respActual = pacienteService.buscar(2).toString();
         String respEsperada = "Gonzalo Alvarez\n" +
                 "DNI: 35885841 Alta: 2022-10-09\n" +
                 "Vive en: Rivera, Rivera, Artigas 2312";

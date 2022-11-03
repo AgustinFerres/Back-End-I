@@ -200,3 +200,129 @@ SELECT * FROM PACIENTE WHERE ID = ? [42104-212]
 [2022-11-02 16:40:31] [ INFO ] [PacienteDaoH2:190] Iniciando la busqueda de todos los pacientes
 [2022-11-02 16:40:31] [ INFO ] [DomicilioDaoH2:70] Se inició un pedido de busqueda de domicilio
 [2022-11-02 16:40:31] [ INFO ] [DomicilioDaoH2:70] Se inició un pedido de busqueda de domicilio
+[2022-11-03 10:58:22] [ INFO ] [PacienteDaoH2:122] Se inició un pedido de update de paciente
+[2022-11-03 10:58:22] [ INFO ] [DomicilioDaoH2:107] Se inició un pedido de update de domicilio
+[2022-11-03 10:58:22] [ INFO ] [PacienteDaoH2:85] Se inició un pedido de busqueda de paciente
+[2022-11-03 10:58:22] [ INFO ] [PacienteDaoH2:30] Se inició un pedido de incorporación de paciente
+[2022-11-03 10:58:22] [ INFO ] [DomicilioDaoH2:21] Se inició un pedido de incorporación de domicilio
+[2022-11-03 10:58:22] [ INFO ] [PacienteDaoH2:85] Se inició un pedido de busqueda de paciente
+[2022-11-03 10:58:22] [ INFO ] [DomicilioDaoH2:70] Se inició un pedido de busqueda de domicilio
+[2022-11-03 10:58:22] [ INFO ] [PacienteDaoH2:30] Se inició un pedido de incorporación de paciente
+[2022-11-03 10:58:22] [ INFO ] [DomicilioDaoH2:21] Se inició un pedido de incorporación de domicilio
+[2022-11-03 10:58:22] [ INFO ] [PacienteDaoH2:30] Se inició un pedido de incorporación de paciente
+[2022-11-03 10:58:22] [ INFO ] [DomicilioDaoH2:21] Se inició un pedido de incorporación de domicilio
+[2022-11-03 10:58:22] [ INFO ] [PacienteDaoH2:158] Se inició un pedido de delete de paciente
+[2022-11-03 10:58:22] [ WARN ] [PacienteDaoH2:169] Se elimino el paciente de id 1
+[2022-11-03 10:58:22] [ INFO ] [PacienteDaoH2:190] Iniciando la busqueda de todos los pacientes
+[2022-11-03 10:58:22] [ INFO ] [DomicilioDaoH2:70] Se inició un pedido de busqueda de domicilio
+[2022-11-03 10:58:22] [ INFO ] [DomicilioDaoH2:70] Se inició un pedido de busqueda de domicilio
+[2022-11-03 10:58:26] [ INFO ] [PacienteDaoH2:122] Se inició un pedido de update de paciente
+[2022-11-03 10:58:26] [ INFO ] [DomicilioDaoH2:107] Se inició un pedido de update de domicilio
+[2022-11-03 10:58:26] [ INFO ] [PacienteDaoH2:85] Se inició un pedido de busqueda de paciente
+[2022-11-03 10:58:26] [ INFO ] [PacienteDaoH2:30] Se inició un pedido de incorporación de paciente
+[2022-11-03 10:58:26] [ INFO ] [DomicilioDaoH2:21] Se inició un pedido de incorporación de domicilio
+[2022-11-03 10:58:26] [ INFO ] [PacienteDaoH2:85] Se inició un pedido de busqueda de paciente
+[2022-11-03 10:58:26] [ INFO ] [DomicilioDaoH2:70] Se inició un pedido de busqueda de domicilio
+[2022-11-03 10:58:26] [ INFO ] [PacienteDaoH2:30] Se inició un pedido de incorporación de paciente
+[2022-11-03 10:58:26] [ INFO ] [DomicilioDaoH2:21] Se inició un pedido de incorporación de domicilio
+[2022-11-03 10:58:26] [ INFO ] [PacienteDaoH2:30] Se inició un pedido de incorporación de paciente
+[2022-11-03 10:58:26] [ INFO ] [DomicilioDaoH2:21] Se inició un pedido de incorporación de domicilio
+[2022-11-03 10:58:26] [ INFO ] [PacienteDaoH2:158] Se inició un pedido de delete de paciente
+[2022-11-03 10:58:26] [ WARN ] [PacienteDaoH2:169] Se elimino el paciente de id 1
+[2022-11-03 10:58:26] [ INFO ] [PacienteDaoH2:190] Iniciando la busqueda de todos los pacientes
+[2022-11-03 10:58:26] [ INFO ] [DomicilioDaoH2:70] Se inició un pedido de busqueda de domicilio
+[2022-11-03 10:58:26] [ INFO ] [DomicilioDaoH2:70] Se inició un pedido de busqueda de domicilio
+[2022-11-03 10:58:35] [ INFO ] [PacienteDaoH2:122] Se inició un pedido de update de paciente
+[2022-11-03 10:58:36] [ INFO ] [DomicilioDaoH2:107] Se inició un pedido de update de domicilio
+[2022-11-03 10:58:36] [ INFO ] [PacienteDaoH2:85] Se inició un pedido de busqueda de paciente
+[2022-11-03 10:59:02] [ INFO ] [PacienteDaoH2:122] Se inició un pedido de update de paciente
+[2022-11-03 10:59:03] [ INFO ] [DomicilioDaoH2:107] Se inició un pedido de update de domicilio
+[2022-11-03 10:59:03] [ INFO ] [PacienteDaoH2:85] Se inició un pedido de busqueda de paciente
+[2022-11-03 10:59:03] [ INFO ] [DomicilioDaoH2:70] Se inició un pedido de busqueda de domicilio
+[2022-11-03 10:59:33] [ INFO ] [PacienteDaoH2:122] Se inició un pedido de update de paciente
+[2022-11-03 10:59:33] [ INFO ] [DomicilioDaoH2:107] Se inició un pedido de update de domicilio
+[2022-11-03 10:59:33] [ INFO ] [PacienteDaoH2:85] Se inició un pedido de busqueda de paciente
+[2022-11-03 10:59:33] [ INFO ] [DomicilioDaoH2:70] Se inició un pedido de busqueda de domicilio
+[2022-11-03 10:59:38] [ INFO ] [PacienteDaoH2:122] Se inició un pedido de update de paciente
+[2022-11-03 10:59:38] [ INFO ] [DomicilioDaoH2:107] Se inició un pedido de update de domicilio
+[2022-11-03 10:59:38] [ INFO ] [PacienteDaoH2:85] Se inició un pedido de busqueda de paciente
+[2022-11-03 10:59:38] [ INFO ] [DomicilioDaoH2:70] Se inició un pedido de busqueda de domicilio
+[2022-11-03 10:59:38] [ INFO ] [PacienteDaoH2:30] Se inició un pedido de incorporación de paciente
+[2022-11-03 10:59:38] [ INFO ] [DomicilioDaoH2:21] Se inició un pedido de incorporación de domicilio
+[2022-11-03 10:59:38] [ INFO ] [PacienteDaoH2:85] Se inició un pedido de busqueda de paciente
+[2022-11-03 10:59:38] [ INFO ] [DomicilioDaoH2:70] Se inició un pedido de busqueda de domicilio
+[2022-11-03 10:59:38] [ INFO ] [PacienteDaoH2:30] Se inició un pedido de incorporación de paciente
+[2022-11-03 10:59:38] [ INFO ] [DomicilioDaoH2:21] Se inició un pedido de incorporación de domicilio
+[2022-11-03 10:59:38] [ INFO ] [PacienteDaoH2:30] Se inició un pedido de incorporación de paciente
+[2022-11-03 10:59:38] [ INFO ] [DomicilioDaoH2:21] Se inició un pedido de incorporación de domicilio
+[2022-11-03 10:59:38] [ INFO ] [PacienteDaoH2:158] Se inició un pedido de delete de paciente
+[2022-11-03 10:59:38] [ WARN ] [PacienteDaoH2:169] Se elimino el paciente de id 1
+[2022-11-03 10:59:38] [ INFO ] [PacienteDaoH2:190] Iniciando la busqueda de todos los pacientes
+[2022-11-03 10:59:38] [ INFO ] [DomicilioDaoH2:70] Se inició un pedido de busqueda de domicilio
+[2022-11-03 10:59:38] [ INFO ] [DomicilioDaoH2:70] Se inició un pedido de busqueda de domicilio
+[2022-11-03 12:02:21] [ INFO ] [PacienteDaoH2:122] Se inició un pedido de update de paciente
+[2022-11-03 12:02:21] [ INFO ] [DomicilioDaoH2:107] Se inició un pedido de update de domicilio
+[2022-11-03 12:02:21] [ INFO ] [PacienteDaoH2:85] Se inició un pedido de busqueda de paciente
+[2022-11-03 12:02:21] [ INFO ] [PacienteDaoH2:30] Se inició un pedido de incorporación de paciente
+[2022-11-03 12:02:21] [ INFO ] [DomicilioDaoH2:21] Se inició un pedido de incorporación de domicilio
+[2022-11-03 12:02:21] [ INFO ] [PacienteDaoH2:85] Se inició un pedido de busqueda de paciente
+[2022-11-03 12:02:21] [ INFO ] [DomicilioDaoH2:70] Se inició un pedido de busqueda de domicilio
+[2022-11-03 12:02:21] [ INFO ] [PacienteDaoH2:30] Se inició un pedido de incorporación de paciente
+[2022-11-03 12:02:21] [ INFO ] [DomicilioDaoH2:21] Se inició un pedido de incorporación de domicilio
+[2022-11-03 12:02:21] [ INFO ] [PacienteDaoH2:30] Se inició un pedido de incorporación de paciente
+[2022-11-03 12:02:21] [ INFO ] [DomicilioDaoH2:21] Se inició un pedido de incorporación de domicilio
+[2022-11-03 12:02:21] [ INFO ] [PacienteDaoH2:158] Se inició un pedido de delete de paciente
+[2022-11-03 12:02:21] [ WARN ] [PacienteDaoH2:169] Se elimino el paciente de id 1
+[2022-11-03 12:02:21] [ INFO ] [PacienteDaoH2:190] Iniciando la busqueda de todos los pacientes
+[2022-11-03 12:02:21] [ INFO ] [DomicilioDaoH2:70] Se inició un pedido de busqueda de domicilio
+[2022-11-03 12:02:21] [ INFO ] [DomicilioDaoH2:70] Se inició un pedido de busqueda de domicilio
+[2022-11-03 12:02:42] [ INFO ] [PacienteDaoH2:122] Se inició un pedido de update de paciente
+[2022-11-03 12:02:43] [ INFO ] [DomicilioDaoH2:107] Se inició un pedido de update de domicilio
+[2022-11-03 12:02:43] [ INFO ] [PacienteDaoH2:85] Se inició un pedido de busqueda de paciente
+[2022-11-03 12:02:43] [ INFO ] [DomicilioDaoH2:70] Se inició un pedido de busqueda de domicilio
+[2022-11-03 12:02:43] [ INFO ] [PacienteDaoH2:30] Se inició un pedido de incorporación de paciente
+[2022-11-03 12:02:43] [ INFO ] [DomicilioDaoH2:21] Se inició un pedido de incorporación de domicilio
+[2022-11-03 12:02:43] [ INFO ] [PacienteDaoH2:85] Se inició un pedido de busqueda de paciente
+[2022-11-03 12:02:43] [ INFO ] [DomicilioDaoH2:70] Se inició un pedido de busqueda de domicilio
+[2022-11-03 12:02:43] [ INFO ] [PacienteDaoH2:30] Se inició un pedido de incorporación de paciente
+[2022-11-03 12:02:43] [ INFO ] [DomicilioDaoH2:21] Se inició un pedido de incorporación de domicilio
+[2022-11-03 12:02:43] [ INFO ] [PacienteDaoH2:30] Se inició un pedido de incorporación de paciente
+[2022-11-03 12:02:43] [ INFO ] [DomicilioDaoH2:21] Se inició un pedido de incorporación de domicilio
+[2022-11-03 12:02:43] [ INFO ] [PacienteDaoH2:158] Se inició un pedido de delete de paciente
+[2022-11-03 12:02:43] [ WARN ] [PacienteDaoH2:169] Se elimino el paciente de id 1
+[2022-11-03 12:02:43] [ INFO ] [PacienteDaoH2:190] Iniciando la busqueda de todos los pacientes
+[2022-11-03 12:02:43] [ INFO ] [DomicilioDaoH2:70] Se inició un pedido de busqueda de domicilio
+[2022-11-03 12:02:43] [ INFO ] [DomicilioDaoH2:70] Se inició un pedido de busqueda de domicilio
+[2022-11-03 12:03:21] [ INFO ] [PacienteDaoH2:122] Se inició un pedido de update de paciente
+[2022-11-03 12:03:22] [ INFO ] [DomicilioDaoH2:107] Se inició un pedido de update de domicilio
+[2022-11-03 12:03:22] [ INFO ] [PacienteDaoH2:85] Se inició un pedido de busqueda de paciente
+[2022-11-03 12:03:22] [ INFO ] [PacienteDaoH2:30] Se inició un pedido de incorporación de paciente
+[2022-11-03 12:03:22] [ INFO ] [DomicilioDaoH2:21] Se inició un pedido de incorporación de domicilio
+[2022-11-03 12:03:22] [ INFO ] [PacienteDaoH2:85] Se inició un pedido de busqueda de paciente
+[2022-11-03 12:03:22] [ INFO ] [DomicilioDaoH2:70] Se inició un pedido de busqueda de domicilio
+[2022-11-03 12:03:22] [ INFO ] [PacienteDaoH2:30] Se inició un pedido de incorporación de paciente
+[2022-11-03 12:03:22] [ INFO ] [DomicilioDaoH2:21] Se inició un pedido de incorporación de domicilio
+[2022-11-03 12:03:22] [ INFO ] [PacienteDaoH2:30] Se inició un pedido de incorporación de paciente
+[2022-11-03 12:03:22] [ INFO ] [DomicilioDaoH2:21] Se inició un pedido de incorporación de domicilio
+[2022-11-03 12:03:22] [ INFO ] [PacienteDaoH2:158] Se inició un pedido de delete de paciente
+[2022-11-03 12:03:22] [ WARN ] [PacienteDaoH2:169] Se elimino el paciente de id 1
+[2022-11-03 12:03:22] [ INFO ] [PacienteDaoH2:190] Iniciando la busqueda de todos los pacientes
+[2022-11-03 12:03:22] [ INFO ] [DomicilioDaoH2:70] Se inició un pedido de busqueda de domicilio
+[2022-11-03 12:03:22] [ INFO ] [DomicilioDaoH2:70] Se inició un pedido de busqueda de domicilio
+[2022-11-03 12:08:00] [ INFO ] [PacienteDaoH2:122] Se inició un pedido de update de paciente
+[2022-11-03 12:08:00] [ INFO ] [DomicilioDaoH2:107] Se inició un pedido de update de domicilio
+[2022-11-03 12:08:00] [ INFO ] [PacienteDaoH2:85] Se inició un pedido de busqueda de paciente
+[2022-11-03 12:08:00] [ INFO ] [DomicilioDaoH2:70] Se inició un pedido de busqueda de domicilio
+[2022-11-03 12:08:00] [ INFO ] [PacienteDaoH2:30] Se inició un pedido de incorporación de paciente
+[2022-11-03 12:08:00] [ INFO ] [DomicilioDaoH2:21] Se inició un pedido de incorporación de domicilio
+[2022-11-03 12:08:00] [ INFO ] [PacienteDaoH2:85] Se inició un pedido de busqueda de paciente
+[2022-11-03 12:08:00] [ INFO ] [DomicilioDaoH2:70] Se inició un pedido de busqueda de domicilio
+[2022-11-03 12:08:00] [ INFO ] [PacienteDaoH2:30] Se inició un pedido de incorporación de paciente
+[2022-11-03 12:08:00] [ INFO ] [DomicilioDaoH2:21] Se inició un pedido de incorporación de domicilio
+[2022-11-03 12:08:00] [ INFO ] [PacienteDaoH2:30] Se inició un pedido de incorporación de paciente
+[2022-11-03 12:08:00] [ INFO ] [DomicilioDaoH2:21] Se inició un pedido de incorporación de domicilio
+[2022-11-03 12:08:00] [ INFO ] [PacienteDaoH2:158] Se inició un pedido de delete de paciente
+[2022-11-03 12:08:00] [ WARN ] [PacienteDaoH2:169] Se elimino el paciente de id 1
+[2022-11-03 12:08:00] [ INFO ] [PacienteDaoH2:190] Iniciando la busqueda de todos los pacientes
+[2022-11-03 12:08:00] [ INFO ] [DomicilioDaoH2:70] Se inició un pedido de busqueda de domicilio
+[2022-11-03 12:08:00] [ INFO ] [DomicilioDaoH2:70] Se inició un pedido de busqueda de domicilio
