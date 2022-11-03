@@ -1,0 +1,32 @@
+[2022-11-03 13:42:32] [ INFO ] [OdontologoIDaoH2:22] Se inició un pedido de incorporación de odontologo
+[2022-11-03 13:42:32] [ INFO ] [OdontologoIDaoH2:70] Se inició un pedido de busqueda de odontologo
+[2022-11-03 13:42:36] [ INFO ] [OdontologoIDaoH2:22] Se inició un pedido de incorporación de odontologo
+[2022-11-03 13:42:36] [ INFO ] [OdontologoIDaoH2:70] Se inició un pedido de busqueda de odontologo
+[2022-11-03 13:45:09] [ INFO ] [OdontologoIDaoH2:22] Se inicio un pedido de incorporación de odontologo
+[2022-11-03 13:45:09] [ INFO ] [OdontologoIDaoH2:70] Se inicio un pedido de busqueda de odontologo
+[2022-11-03 13:46:02] [ INFO ] [OdontologoIDaoH2:22] Se inicio un pedido de incorporacion de odontologo
+[2022-11-03 13:46:02] [ INFO ] [OdontologoIDaoH2:70] Se inicio un pedido de busqueda de odontologo
+[2022-11-03 13:46:02] [ INFO ] [OdontologoIDaoH2:170] Iniciando la busqueda de todos los odontologos
+[2022-11-03 13:46:29] [ INFO ] [OdontologoIDaoH2:22] Se inicio un pedido de incorporacion de odontologo
+[2022-11-03 13:46:29] [ INFO ] [OdontologoIDaoH2:70] Se inicio un pedido de busqueda de odontologo
+[2022-11-03 13:46:29] [ INFO ] [OdontologoIDaoH2:140] Se inicio un pedido de delete de odontologo
+[2022-11-03 13:46:30] [ WARN ] [OdontologoIDaoH2:147] Se elimino el odontologo de id 1
+[2022-11-03 13:48:50] [ INFO ] [OdontologoIDaoH2:22] Se inicio un pedido de incorporacion de odontologo
+[2022-11-03 13:48:50] [ ERROR] [OdontologoIDaoH2:49] Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-212]
+[2022-11-03 13:48:50] [ ERROR] [OdontologoIDaoH2:57] Cannot invoke "java.sql.Connection.close()" because "connection" is null
+[2022-11-03 13:48:50] [ INFO ] [OdontologoIDaoH2:66] Se inicio un pedido de busqueda de odontologo
+[2022-11-03 13:48:50] [ ERROR] [OdontologoIDaoH2:83] Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-212]
+[2022-11-03 13:48:50] [ ERROR] [OdontologoIDaoH2:91] Cannot invoke "java.sql.Connection.close()" because "connection" is null
+[2022-11-03 13:48:57] [ INFO ] [OdontologoIDaoH2:22] Se inicio un pedido de incorporacion de odontologo
+[2022-11-03 13:48:57] [ INFO ] [OdontologoIDaoH2:66] Se inicio un pedido de busqueda de odontologo
+[2022-11-03 13:48:57] [ INFO ] [OdontologoIDaoH2:100] Se inicio un pedido de update de odontologo
+[2022-11-03 13:48:57] [ ERROR] [OdontologoIDaoH2:113] Cannot invoke "java.lang.Integer.intValue()" because the return value of "models.Odontologo.getId()" is null
+[2022-11-03 13:49:35] [ INFO ] [OdontologoIDaoH2:22] Se inicio un pedido de incorporacion de odontologo
+[2022-11-03 13:49:35] [ INFO ] [OdontologoIDaoH2:100] Se inicio un pedido de update de odontologo
+[2022-11-03 13:49:35] [ ERROR] [OdontologoIDaoH2:113] Cannot invoke "java.lang.Integer.intValue()" because the return value of "models.Odontologo.getId()" is null
+[2022-11-03 13:49:35] [ INFO ] [OdontologoIDaoH2:66] Se inicio un pedido de busqueda de odontologo
+[2022-11-03 13:50:51] [ INFO ] [OdontologoIDaoH2:22] Se inicio un pedido de incorporacion de odontologo
+[2022-11-03 13:50:51] [ INFO ] [OdontologoIDaoH2:100] Se inicio un pedido de update de odontologo
+[2022-11-03 13:50:51] [ INFO ] [OdontologoIDaoH2:66] Se inicio un pedido de busqueda de odontologo
+[2022-11-03 13:51:06] [ INFO ] [OdontologoIDaoH2:22] Se inicio un pedido de incorporacion de odontologo
+[2022-11-03 13:51:06] [ INFO ] [OdontologoIDaoH2:66] Se inicio un pedido de busqueda de odontologo
