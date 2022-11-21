@@ -1,36 +1,36 @@
 package com.example.proyecto_Integrador.service;
 
-import com.example.proyecto_Integrador.dao.IDao;
-import com.example.proyecto_Integrador.dao.OdontologoIDaoH2;
-import com.example.proyecto_Integrador.model.Odontologo;
+import com.example.proyecto_Integrador.entity.Odontologo;
+import com.example.proyecto_Integrador.repository.OdontologoRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
+
 @Service
 public class OdontologoService {
-    private IDao<Odontologo> odontologoIDao;
-    public OdontologoService(){
 
-        odontologoIDao = new OdontologoIDaoH2();
-    }
+    @Autowired
+    private OdontologoRepository odontologoRepository;
 
     public Odontologo guardar(Odontologo odontologo){
-        return odontologoIDao.guardar(odontologo);
+        return odontologoRepository.save(odontologo);
     }
 
-    public Odontologo buscar(Integer id){
-        return odontologoIDao.buscar(id);
+    public Optional<Odontologo> buscar(Integer id){
+        return odontologoRepository.findById(id);
     }
 
     public void actualizar(Odontologo odontologo){
-        odontologoIDao.actualizar(odontologo);
+        odontologoRepository.save(odontologo);
     }
 
     public void eliminar(Integer id){
-        odontologoIDao.eliminar(id);
+        odontologoRepository.deleteById(id);
     }
 
     public List<Odontologo> buscarTodos (){
-        return odontologoIDao.buscarTodo();
+        return odontologoRepository.findAll();
     }
 }

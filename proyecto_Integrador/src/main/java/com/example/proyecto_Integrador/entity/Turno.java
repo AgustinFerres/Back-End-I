@@ -1,12 +1,22 @@
-package com.example.proyecto_Integrador.model;
+package com.example.proyecto_Integrador.entity;
 
+import javax.persistence.*;
 import java.time.LocalDate;
 
+@Entity
+@Table(name = "Turnos")
 public class Turno {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "paciente_id")
     private Paciente paciente;
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "odontologo_id")
     private  Odontologo odontologo;
+    @Column
     private LocalDate fecha;
 
     public Turno() {

@@ -1,10 +1,19 @@
-package com.example.proyecto_Integrador.model;
+package com.example.proyecto_Integrador.entity;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "ODONTOLOGOS")
 public class Odontologo {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    @Column
     private Integer matricula;
+    @Column
     private String nombre;
+    @Column
     private String apellido;
 
     public Odontologo() {

@@ -1,12 +1,21 @@
-package com.example.proyecto_Integrador.model;
+package com.example.proyecto_Integrador.entity;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "DOMICILIOS")
 public class Domicilio {
 
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    @Column
     private String calle;
+    @Column
     private Integer numero;
+    @Column
     private String localidad;
+    @Column
     private String provincia;
 
     public Domicilio() {
