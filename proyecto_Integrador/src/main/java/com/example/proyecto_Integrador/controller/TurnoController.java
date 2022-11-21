@@ -30,7 +30,7 @@ public class TurnoController {
     @PutMapping
     public ResponseEntity<String> actualizar (@RequestBody Turno turno) {
             turnoService.actualizar(turno);
-            return ResponseEntity.ok().body("Se actualizo el paciente de id: " + turno.getId());
+            return ResponseEntity.ok().body("Se actualizo el turno de id: " + turno.getId());
     }
 
     @DeleteMapping("/borrar")
