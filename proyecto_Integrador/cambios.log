@@ -157,3 +157,84 @@ INSERT INTO PACIENTE VALUES (DEFAULT,?,?,?,?,?) [21002-214]
 [2022-11-19 18:30:51] [ INFO ] [PacienteIDaoH2:205] Se inicio un pedido de busqueda de paciente
 [2022-11-19 18:30:57] [ INFO ] [PacienteIDaoH2:205] Se inicio un pedido de busqueda de paciente
 [2022-11-19 18:30:57] [ INFO ] [DomicilioIDaoH2:68] Se inicio un pedido de busqueda de domicilio
+[2022-11-20 15:01:52] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:01:58] [ INFO ] [OdontologoIDaoH2:23] Se inicio un pedido de incorporacion de odontologo
+[2022-11-20 15:01:59] [ INFO ] [OdontologoIDaoH2:23] Se inicio un pedido de incorporacion de odontologo
+[2022-11-20 15:02:01] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:04:58] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:06:59] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:21:02] [ INFO ] [OdontologoIDaoH2:23] Se inicio un pedido de incorporacion de odontologo
+[2022-11-20 15:21:03] [ INFO ] [OdontologoIDaoH2:23] Se inicio un pedido de incorporacion de odontologo
+[2022-11-20 15:21:05] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:21:12] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:23:02] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:23:33] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:23:38] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:25:42] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:27:15] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:27:21] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:27:40] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:28:14] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:28:23] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:28:24] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:30:36] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:32:09] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:32:27] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:32:54] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:33:04] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:33:26] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:33:42] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:33:51] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:34:36] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:34:38] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:34:39] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:34:40] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:34:52] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:35:32] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:36:31] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:37:23] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:37:50] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:38:20] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:38:20] [ INFO ] [PacienteIDaoH2:173] Iniciando la busqueda de todos los pacientes
+[2022-11-20 15:38:52] [ INFO ] [OdontologoIDaoH2:23] Se inicio un pedido de incorporacion de odontologo
+[2022-11-20 15:38:58] [ INFO ] [OdontologoIDaoH2:23] Se inicio un pedido de incorporacion de odontologo
+[2022-11-20 15:39:04] [ INFO ] [PacienteIDaoH2:26] Se inicio un pedido de incorporacion de paciente
+[2022-11-20 15:39:04] [ INFO ] [DomicilioIDaoH2:22] Se inicio un pedido de incorporacion de domicilio
+[2022-11-20 15:39:05] [ INFO ] [PacienteIDaoH2:26] Se inicio un pedido de incorporacion de paciente
+[2022-11-20 15:39:05] [ INFO ] [DomicilioIDaoH2:22] Se inicio un pedido de incorporacion de domicilio
+[2022-11-20 15:39:15] [ INFO ] [PacienteIDaoH2:173] Iniciando la busqueda de todos los pacientes
+[2022-11-20 15:39:15] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:39:15] [ INFO ] [DomicilioIDaoH2:68] Se inicio un pedido de busqueda de domicilio
+[2022-11-20 15:39:15] [ INFO ] [DomicilioIDaoH2:68] Se inicio un pedido de busqueda de domicilio
+[2022-11-20 15:40:49] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:40:49] [ INFO ] [PacienteIDaoH2:173] Iniciando la busqueda de todos los pacientes
+[2022-11-20 15:41:37] [ INFO ] [PacienteIDaoH2:173] Iniciando la busqueda de todos los pacientes
+[2022-11-20 15:41:37] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:41:48] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:41:48] [ INFO ] [PacienteIDaoH2:173] Iniciando la busqueda de todos los pacientes
+[2022-11-20 15:41:57] [ INFO ] [OdontologoIDaoH2:23] Se inicio un pedido de incorporacion de odontologo
+[2022-11-20 15:41:58] [ INFO ] [OdontologoIDaoH2:23] Se inicio un pedido de incorporacion de odontologo
+[2022-11-20 15:42:00] [ INFO ] [PacienteIDaoH2:26] Se inicio un pedido de incorporacion de paciente
+[2022-11-20 15:42:00] [ INFO ] [DomicilioIDaoH2:22] Se inicio un pedido de incorporacion de domicilio
+[2022-11-20 15:42:01] [ INFO ] [PacienteIDaoH2:26] Se inicio un pedido de incorporacion de paciente
+[2022-11-20 15:42:01] [ INFO ] [DomicilioIDaoH2:22] Se inicio un pedido de incorporacion de domicilio
+[2022-11-20 15:42:09] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:42:09] [ INFO ] [PacienteIDaoH2:173] Iniciando la busqueda de todos los pacientes
+[2022-11-20 15:42:09] [ INFO ] [DomicilioIDaoH2:68] Se inicio un pedido de busqueda de domicilio
+[2022-11-20 15:42:09] [ INFO ] [DomicilioIDaoH2:68] Se inicio un pedido de busqueda de domicilio
+[2022-11-20 15:46:54] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:46:54] [ INFO ] [PacienteIDaoH2:173] Iniciando la busqueda de todos los pacientes
+[2022-11-20 15:46:54] [ INFO ] [DomicilioIDaoH2:68] Se inicio un pedido de busqueda de domicilio
+[2022-11-20 15:46:54] [ INFO ] [DomicilioIDaoH2:68] Se inicio un pedido de busqueda de domicilio
+[2022-11-20 15:47:09] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:47:09] [ INFO ] [PacienteIDaoH2:173] Iniciando la busqueda de todos los pacientes
+[2022-11-20 15:47:09] [ INFO ] [DomicilioIDaoH2:68] Se inicio un pedido de busqueda de domicilio
+[2022-11-20 15:47:09] [ INFO ] [DomicilioIDaoH2:68] Se inicio un pedido de busqueda de domicilio
+[2022-11-20 15:47:36] [ INFO ] [PacienteIDaoH2:173] Iniciando la busqueda de todos los pacientes
+[2022-11-20 15:47:36] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:47:36] [ INFO ] [DomicilioIDaoH2:68] Se inicio un pedido de busqueda de domicilio
+[2022-11-20 15:47:36] [ INFO ] [DomicilioIDaoH2:68] Se inicio un pedido de busqueda de domicilio
+[2022-11-20 15:47:40] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-11-20 15:47:40] [ INFO ] [PacienteIDaoH2:173] Iniciando la busqueda de todos los pacientes
+[2022-11-20 15:47:40] [ INFO ] [DomicilioIDaoH2:68] Se inicio un pedido de busqueda de domicilio
+[2022-11-20 15:47:40] [ INFO ] [DomicilioIDaoH2:68] Se inicio un pedido de busqueda de domicilio
