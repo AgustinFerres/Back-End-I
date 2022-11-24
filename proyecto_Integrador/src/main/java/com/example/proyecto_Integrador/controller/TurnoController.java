@@ -23,7 +23,7 @@ public class TurnoController {
     }
 
     @GetMapping("/buscar")
-    public ResponseEntity<Optional<Turno>> buscar (@RequestParam("id") Integer id) {
+    public ResponseEntity<Optional<Turno>> buscar (@RequestParam("id") Long id) {
             return ResponseEntity.ok(turnoService.buscar(id));
     }
 
@@ -34,7 +34,7 @@ public class TurnoController {
     }
 
     @DeleteMapping("/borrar")
-    public ResponseEntity<String> eliminar (@RequestParam("id") Integer id) {
+    public ResponseEntity<String> eliminar (@RequestParam("id") Long id) {
             turnoService.eliminar(id);
             return ResponseEntity.ok().body("Se elimino el turno de id: " + id);
     }

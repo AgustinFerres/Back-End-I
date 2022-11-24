@@ -19,7 +19,7 @@ public class PacienteService {
         return pacienteRepository.save(paciente);
     }
 
-    public Optional<Paciente> buscar(Integer id){
+    public Optional<Paciente> buscar(Long id){
         return pacienteRepository.findById(id);
     }
 
@@ -27,7 +27,7 @@ public class PacienteService {
         pacienteRepository.save(paciente);
     }
 
-    public void eliminar(Integer id){
+    public void eliminar(Long id){
         pacienteRepository.deleteById(id);
     }
 

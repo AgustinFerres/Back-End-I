@@ -18,9 +18,9 @@ public class ProyectoIntegradorApplication {
 		return new WebMvcConfigurerAdapter() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/").allowedOrigins("http://127.0.0.1:5500");
 				registry.addMapping("/odontologos").allowedOrigins("http://127.0.0.1:5500");
 				registry.addMapping("/odontologos/buscar").allowedOrigins("http://127.0.0.1:5500");
+				registry.addMapping("/odontologos/buscarXnombre").allowedOrigins("http://127.0.0.1:5500");
 				registry.addMapping("/pacientes").allowedOrigins("http://127.0.0.1:5500");
 				registry.addMapping("/pacientes/buscar").allowedOrigins("http://127.0.0.1:5500");
 				registry.addMapping("/turnos").allowedOrigins("http://127.0.0.1:5500");

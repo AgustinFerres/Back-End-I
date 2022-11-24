@@ -9,7 +9,7 @@ public class Paciente {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
     @Column
     private String nombre;
     @Column
@@ -19,14 +19,14 @@ public class Paciente {
     @Column
     private LocalDate fecha_ingreso;
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "domicilio_id")
+    @JoinColumn(name = "domicilio_id" ,referencedColumnName = "id")
     private Domicilio domicilio;
     @Column
     private String email;
     public Paciente() {
     }
 
-    public Paciente(Integer id, String nombre, String apellido, String dni, LocalDate fecha_ingreso, Domicilio domicilio, String email) {
+    public Paciente(Long id, String nombre, String apellido, String dni, LocalDate fecha_ingreso, Domicilio domicilio, String email) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -45,11 +45,11 @@ public class Paciente {
         this.email = email;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

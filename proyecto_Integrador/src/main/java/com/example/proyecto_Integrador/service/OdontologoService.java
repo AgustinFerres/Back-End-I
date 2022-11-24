@@ -18,7 +18,7 @@ public class OdontologoService {
         return odontologoRepository.save(odontologo);
     }
 
-    public Optional<Odontologo> buscar(Integer id){
+    public Optional<Odontologo> buscar(Long id){
         return odontologoRepository.findById(id);
     }
 
@@ -26,11 +26,15 @@ public class OdontologoService {
         odontologoRepository.save(odontologo);
     }
 
-    public void eliminar(Integer id){
+    public void eliminar(Long id){
         odontologoRepository.deleteById(id);
     }
 
     public List<Odontologo> buscarTodos (){
         return odontologoRepository.findAll();
+    }
+
+    public Optional<Odontologo> buscarXNombreYApellido(String nombre,String apellido){
+        return odontologoRepository.findByNombreAndApellido(nombre,apellido);
     }
 }

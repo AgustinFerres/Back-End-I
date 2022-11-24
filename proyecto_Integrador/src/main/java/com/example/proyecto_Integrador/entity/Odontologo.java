@@ -8,7 +8,7 @@ public class Odontologo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
     @Column
     private Integer matricula;
     @Column
@@ -25,7 +25,7 @@ public class Odontologo {
         this.apellido = apellido;
     }
 
-    public Odontologo(Integer id, Integer matricula, String nombre, String apellido) {
+    public Odontologo(Long id, Integer matricula, String nombre, String apellido) {
         this.id = id;
         this.matricula = matricula;
         this.nombre = nombre;
@@ -37,11 +37,11 @@ public class Odontologo {
         return nombre + " " + apellido + " matricula: " + matricula;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

@@ -18,7 +18,7 @@ public class TurnoService {
         return turnoRepository.save(turno);
     }
 
-    public Optional<Turno> buscar(Integer id){
+    public Optional<Turno> buscar(Long id){
         return turnoRepository.findById(id);
     }
 
@@ -26,7 +26,7 @@ public class TurnoService {
         turnoRepository.save(turno);
     }
 
-    public void eliminar(Integer id){
+    public void eliminar(Long id){
         turnoRepository.deleteById(id);
     }
 

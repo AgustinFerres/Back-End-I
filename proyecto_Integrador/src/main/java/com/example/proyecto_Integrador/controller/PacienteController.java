@@ -23,24 +23,42 @@ public class PacienteController {
     }
 
     @GetMapping("/buscar")
-    public ResponseEntity<Optional<Paciente>> buscar (@RequestParam("id") Integer id) {
-            return ResponseEntity.ok(pacienteService.buscar(id));
+    public ResponseEntity<Optional<Paciente>> buscar (@RequestParam("id") Long id) {
+        Optional<Paciente> pacienteBuscado = pacienteService.buscar(id);
+
+        if (pacienteBuscado.isPresent()){
+            return ResponseEntity.ok(pacienteBuscado);
+        }
+        return ResponseEntity.notFound().build();
     }
     @GetMapping("/buscar/mail")
     public ResponseEntity<Optional<Paciente>> buscar (@RequestParam("email") String string) {
-            return ResponseEntity.ok(pacienteService.buscarXEmail(string));
+        Optional<Paciente> pacienteBuscado = pacienteService.buscarXEmail(string);
+
+        if (pacienteBuscado.isPresent()){
+            return ResponseEntity.ok(pacienteBuscado);
+        }
+        return ResponseEntity.notFound().build();
     }
 
     @PutMapping
     public ResponseEntity<String> actualizar (@RequestBody Paciente paciente) {
+        Optional<Paciente> pacienteBuscado = pacienteService.buscar(paciente.getId());
+        if (pacienteBuscado.isPresent()){
             pacienteService.actualizar(paciente);
             return ResponseEntity.ok().body("Se actualizo el paciente de apellido: " + paciente.getApellido());
+        }
+        return ResponseEntity.badRequest().body("No existe un paciente con id = " + paciente.getId());
     }
 
     @DeleteMapping("/borrar")
-    public ResponseEntity<String> eliminar (@RequestParam("id") Integer id) {
+    public ResponseEntity<String> eliminar (@RequestParam("id") Long id) {
+        Optional<Paciente> pacienteBuscado = pacienteService.buscar(id);
+        if (pacienteBuscado.isPresent()){
             pacienteService.eliminar(id);
-            return ResponseEntity.ok().body("Se elimino el paciente de id: " + id);
+            return ResponseEntity.ok().body("Se actualizo el paciente de apellido: " + pacienteBuscado.get().getApellido());
+        }
+        return ResponseEntity.badRequest().body("No existe un paciente con id = " + id );
     }
 
     @GetMapping

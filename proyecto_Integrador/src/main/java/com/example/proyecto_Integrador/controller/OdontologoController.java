@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
@@ -23,7 +24,7 @@ public class OdontologoController {
     }
 
     @GetMapping("/buscar")
-    public ResponseEntity<Optional<Odontologo>> buscar (@RequestParam("id") Integer id) {
+    public ResponseEntity<Optional<Odontologo>> buscar (@RequestParam("id") Long id) {
             return ResponseEntity.ok(odontologoService.buscar(id));
     }
 
@@ -34,7 +35,7 @@ public class OdontologoController {
     }
 
     @DeleteMapping("/borrar")
-    public ResponseEntity<String> eliminar (@RequestParam("id") Integer id) {
+    public ResponseEntity<String> eliminar (@RequestParam("id") Long id) {
             odontologoService.eliminar(id);
             return ResponseEntity.ok().body("Se elimino el odontologo de id: " + id);
     }
@@ -42,5 +43,13 @@ public class OdontologoController {
     @GetMapping
     public ResponseEntity<List<Odontologo>> buscarTodos () {
         return ResponseEntity.ok(odontologoService.buscarTodos());
+    }
+
+    @GetMapping("/buscarXnombre")
+    public ResponseEntity<Optional<Odontologo>> buscar (@RequestParam("nombreCompleto") String nombreCompleto) {
+        List<String> nombre = Arrays.stream(nombreCompleto.split(" ")).toList();
+
+
+        return ResponseEntity.ok(odontologoService.buscarXNombreYApellido(nombre.get(0), nombre.get(1)));
     }
 }
