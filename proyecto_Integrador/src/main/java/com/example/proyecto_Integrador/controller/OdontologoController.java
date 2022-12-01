@@ -1,6 +1,8 @@
 package com.example.proyecto_Integrador.controller;
 
 import com.example.proyecto_Integrador.entity.Odontologo;
+import com.example.proyecto_Integrador.entity.Paciente;
+import com.example.proyecto_Integrador.exception.ResourceNotFoundException;
 import com.example.proyecto_Integrador.service.OdontologoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -25,8 +27,13 @@ public class OdontologoController {
     }
 
     @GetMapping("/buscar")
-    public ResponseEntity<Optional<Odontologo>> buscar (@RequestParam("id") Long id) {
-            return ResponseEntity.ok(odontologoService.buscar(id));
+    public ResponseEntity<Optional<Odontologo>> buscar (@RequestParam("id") Long id) throws ResourceNotFoundException {
+        Optional<Odontologo> odontologoBuscado = odontologoService.buscar(id);
+
+        if (odontologoBuscado.isPresent()){
+            return ResponseEntity.ok(odontologoBuscado);
+        }
+        throw new ResourceNotFoundException("No se encontro un odontologo de id = " + id);
     }
 
     @PutMapping
@@ -36,9 +43,13 @@ public class OdontologoController {
     }
 
     @DeleteMapping("/borrar")
-    public ResponseEntity<String> eliminar (@RequestParam("id") Long id) {
+    public ResponseEntity<String> eliminar (@RequestParam("id") Long id) throws ResourceNotFoundException {
+        Optional<Odontologo> odontologoBuscado = odontologoService.buscar(id);
+        if (odontologoBuscado.isPresent()){
             odontologoService.eliminar(id);
-            return ResponseEntity.ok().body("Se elimino el odontologo de id: " + id);
+            return ResponseEntity.ok().body("Se actualizo el odontologo de apellido: " + odontologoBuscado.get().getApellido());
+        }
+        throw new ResourceNotFoundException("No existe un odontologo con id = " + id);
     }
 
     @GetMapping
