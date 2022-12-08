@@ -1,7 +1,11 @@
 package com.example.proyecto_Integrador.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "PACIENTES")
@@ -23,6 +27,9 @@ public class Paciente {
     private Domicilio domicilio;
     @Column
     private String email;
+    @OneToMany(mappedBy = "paciente", fetch = FetchType.LAZY)
+    @JsonIgnore
+    private Set<Turno> turnos = new HashSet<>();
     public Paciente() {
     }
 

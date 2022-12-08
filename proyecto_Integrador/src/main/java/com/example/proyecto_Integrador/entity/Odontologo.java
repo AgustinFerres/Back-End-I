@@ -1,6 +1,10 @@
 package com.example.proyecto_Integrador.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "ODONTOLOGOS")
@@ -15,6 +19,9 @@ public class Odontologo {
     private String nombre;
     @Column
     private String apellido;
+    @OneToMany(mappedBy = "odontologo", fetch = FetchType.LAZY)
+    @JsonIgnore
+    private Set<Turno> turnos = new HashSet<>();
 
     public Odontologo() {
     }
@@ -30,6 +37,14 @@ public class Odontologo {
         this.matricula = matricula;
         this.nombre = nombre;
         this.apellido = apellido;
+    }
+
+    public Set<Turno> getTurnos() {
+        return turnos;
+    }
+
+    public void setTurnos(Set<Turno> turnos) {
+        this.turnos = turnos;
     }
 
     @Override

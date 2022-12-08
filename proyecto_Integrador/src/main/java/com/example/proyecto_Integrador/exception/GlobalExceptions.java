@@ -12,4 +12,8 @@ public class GlobalExceptions {
     public ResponseEntity<String> procesarResourceNotFoundException (ResourceNotFoundException rnfe) {
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(rnfe.getMessage());
     }
+    @ExceptionHandler(BadRequestException.class)
+    public ResponseEntity<String> procesarBadRequestException(BadRequestException bre){
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(bre.getMessage());
+    }
 }
