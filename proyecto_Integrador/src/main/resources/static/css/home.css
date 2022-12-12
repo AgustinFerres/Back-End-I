@@ -81,6 +81,12 @@ header > div nav > ul a:hover {
 main {
   width: 100%;
 }
+main > h2 {
+  font-size: 3rem;
+  position: relative;
+  text-align: center;
+  top: 25vh;
+}
 main > div {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -21,12 +21,12 @@ public class OdontologoController {
     @Autowired
     private OdontologoService odontologoService;
 
-    @PostMapping
+    @PostMapping("/admin")
     public ResponseEntity<Odontologo> guardar (@RequestBody Odontologo odontologo) {
         return ResponseEntity.ok(odontologoService.guardar(odontologo));
     }
 
-    @GetMapping("/buscar")
+    @GetMapping("/admin/buscar")
     public ResponseEntity<Optional<Odontologo>> buscar (@RequestParam("id") Long id) throws ResourceNotFoundException {
         Optional<Odontologo> odontologoBuscado = odontologoService.buscar(id);
 
@@ -35,28 +35,32 @@ public class OdontologoController {
         }
         throw new ResourceNotFoundException("No se encontro un odontologo de id = " + id);
     }
-    @PutMapping
-    public ResponseEntity<String> actualizar (@RequestBody Odontologo odontologo) {
+    @PutMapping("/admin")
+    public ResponseEntity<String> actualizar (@RequestBody Odontologo odontologo) throws ResourceNotFoundException {
+        Optional<Odontologo> odontologoBuscado = odontologoService.buscar(odontologo.getId());
+        if (odontologoBuscado.isPresent()){
             odontologoService.actualizar(odontologo);
-            return ResponseEntity.ok().body("Se actualizo el paciente de apellido: " + odontologo.getApellido());
+            return ResponseEntity.ok().body("Se actualizo el odontologo de apellido: " + odontologo.getApellido());
+        }
+        throw new ResourceNotFoundException("No se encontro un odontologo de id = " + odontologo.getId());
     }
 
-    @DeleteMapping("/borrar")
+    @DeleteMapping("/admin/borrar")
     public ResponseEntity<String> eliminar (@RequestParam("id") Long id) throws ResourceNotFoundException {
         Optional<Odontologo> odontologoBuscado = odontologoService.buscar(id);
         if (odontologoBuscado.isPresent()){
             odontologoService.eliminar(id);
-            return ResponseEntity.ok().body("Se actualizo el odontologo de apellido: " + odontologoBuscado.get().getApellido());
+            return ResponseEntity.ok().body("Se elimino el odontologo de apellido: " + odontologoBuscado.get().getApellido());
         }
         throw new ResourceNotFoundException("No existe un odontologo con id = " + id);
     }
 
-    @GetMapping("/buscarTodos")
+    @GetMapping
     public ResponseEntity<List<Odontologo>> buscarTodos () {
         return ResponseEntity.ok(odontologoService.buscarTodos());
     }
 
-    @GetMapping("/buscarXnombre")
+    @GetMapping("/admin/buscarXnombre")
     public ResponseEntity<Optional<Odontologo>> buscar (@RequestParam("nombreCompleto") String nombreCompleto) {
         List<String> nombre = Arrays.stream(nombreCompleto.split(" ")).toList();
 

@@ -1,13 +1,15 @@
 window.addEventListener('load', () => {
 
 
-    const odontologoSection = document.querySelector('.odontologos')
-    const odontologoSkeleton = document.querySelectorAll('.odontologos .skeleton')
-    const odontologoBuscadoSection = document.querySelector('.pop-up')
+    const odontologoSection = document.querySelector('.odontologos');
+    const odontologoSkeleton = document.querySelectorAll('.odontologos .skeleton');
+    const odontologoBuscadoSection = document.querySelector('.pop-up');
 
-    const buscarForm = document.querySelector('.buscar form')
-    const agregarForm = document.querySelector('.agregar form')
-    const actualizarForm = document.querySelector('.actualizar form')
+    const buscarForm = document.querySelector('.buscar form');
+    const agregarForm = document.querySelector('.agregar form');
+    const actualizarForm = document.querySelector('.actualizar form');
+    const borrarForm = document.querySelector('.borrar form');
+
 
 
 
@@ -33,8 +35,10 @@ window.addEventListener('load', () => {
         fetch(ENDPOINT + `odontologos`)
         .then(res => res.json())
         .then(data => {
-            odontologoSkeleton.forEach(item => item.setAttribute('id','oculto'))
-            crearArticle(data);
+            if (data.length > 0){
+                odontologoSkeleton.forEach(item => item.setAttribute('id','oculto'))
+                crearArticle(data);
+            }
 
         })
         .catch(err => console.log(err))
@@ -68,8 +72,8 @@ window.addEventListener('load', () => {
             crossBuscado.addEventListener('click', cerrarPopUp)
         }
 
-        fetch(ENDPOINT + `odontologos/buscarXnombre?nombreCompleto=${nombreCompleto}`)
-        .then(res => res.json())
+        fetch(ENDPOINT + `odontologos/admin/buscarXnombre?nombreCompleto=${nombreCompleto}`)
+        .then(res => res.status === 403 ? location.replace("/pages/notAllowed.html") : res.json())
         .then(data => {
             odontologoBuscadoSection.removeAttribute('id')
             crearArticle(data);
@@ -98,7 +102,7 @@ window.addEventListener('load', () => {
         const apellido = e.target[1].value
         const matricula = e.target[2].value
 
-        fetch(ENDPOINT + 'odontologos',{
+        fetch(ENDPOINT + 'odontologos/admin',{
             method: "POST",
             body: JSON.stringify({
                 matricula,
@@ -110,8 +114,7 @@ window.addEventListener('load', () => {
             }
         }
 
-        )
-        location.reload();
+        ).then(res => res.status === 403 ? location.replace("/pages/notAllowed.html") : location.reload())
     }
 
     agregarForm.addEventListener('submit', postOdontologo)
@@ -130,7 +133,7 @@ window.addEventListener('load', () => {
         const apellido = e.target[2].value
         const matricula = e.target[3].value
 
-        fetch(ENDPOINT + 'odontologos',{
+        fetch(ENDPOINT + 'odontologos/admin',{
             method: "POST",
             body: JSON.stringify({
                 id,
@@ -141,11 +144,24 @@ window.addEventListener('load', () => {
             headers: {
                 "content-type": 'application/json'
             }
-        })
-        location.reload();
+        }).then(res => res.status === 403 ? location.replace("/pages/notAllowed.html") : location.reload())
     }
-
-
     actualizarForm.addEventListener('submit', putOdontologo);
+
+    /* -------------------------------------------------------------------------- */
+            /*                                BORRAR ODONTOLOGO                                */
+    /* -------------------------------------------------------------------------- */
+
+                const deleteOdontologo = (e) => {
+                    e.preventDefault()
+
+                    const id = e.target[0].value;
+
+                    fetch(ENDPOINT + `odontologos/admin/borrar?id=${id}`, {method: "DELETE"}).then(res => res.status === 403 ? location.replace("/pages/notAllowed.html") : location.reload())
+
+                }
+
+        borrarForm.addEventListener('submit', deleteOdontologo);
+
     getOdontologos();
 })

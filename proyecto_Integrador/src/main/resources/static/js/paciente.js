@@ -1,13 +1,15 @@
 window.addEventListener('load', () => {
 
 
-    const pacienteSection = document.querySelector('.pacientes')
-    const pacienteSkeleton = document.querySelectorAll('.pacientes .skeleton')
-    const pacienteBuscadoSection = document.querySelector('.pop-up')
+    const pacienteSection = document.querySelector('.pacientes');
+    const pacienteSkeleton = document.querySelectorAll('.pacientes .skeleton');
+    const pacienteBuscadoSection = document.querySelector('.pop-up');
 
-    const buscarForm = document.querySelector('.buscar form')
-    const agregarForm = document.querySelector('.agregar form')
-    const actualizarForm = document.querySelector('.actualizar form')
+    const buscarForm = document.querySelector('.buscar form');
+    const agregarForm = document.querySelector('.agregar form');
+    const actualizarForm = document.querySelector('.actualizar form');
+    const borrarForm = document.querySelector('.borrar form');
+
 
 
 
@@ -34,8 +36,10 @@ window.addEventListener('load', () => {
         fetch(ENDPOINT + `pacientes`)
         .then(res => res.json())
         .then(data => {
-            pacienteSkeleton.forEach(item => item.setAttribute('id','oculto'))
-            crearArticle(data);
+            if (data.length > 0){
+                pacienteSkeleton.forEach(item => item.setAttribute('id','oculto'))
+                crearArticle(data);
+            }
 
         })
         .catch(err => console.log(err))
@@ -78,8 +82,8 @@ window.addEventListener('load', () => {
             crossBuscado.addEventListener('click', cerrarPopUp)
         }
 
-        fetch(ENDPOINT + `pacientes/buscar/mail?email=${email}`)
-        .then(res => res.json())
+        fetch(ENDPOINT + `pacientes/admin/buscar/mail?email=${email}`)
+        .then(res => res => res.status === 403 ? location.replace("/pages/notAllowed.html") : res.json())
         .then(data => {
             pacienteBuscadoSection.removeAttribute('id')
             crearArticle(data);
@@ -117,7 +121,7 @@ window.addEventListener('load', () => {
 
         const dateNow = new Date();
         const fecha_ingreso = dateNow
-        fetch(ENDPOINT + 'pacientes',{
+        fetch(ENDPOINT + 'pacientes/admin',{
             method: "POST",
             body: JSON.stringify({
                 nombre,
@@ -132,8 +136,7 @@ window.addEventListener('load', () => {
             }
         }
 
-        )
-        location.reload();
+        ).then(res => res.status === 403 ? location.replace("/pages/notAllowed.html") : location.reload())
     }
 
     agregarForm.addEventListener('submit', postPaciente)
@@ -152,7 +155,7 @@ window.addEventListener('load', () => {
         const apellido = e.target[2].value
         const matricula = e.target[3].value
 
-        fetch(ENDPOINT + 'pacientes',{
+        fetch(ENDPOINT + 'pacientes/admin',{
             method: "POST",
             body: JSON.stringify({
                 id,
@@ -163,11 +166,23 @@ window.addEventListener('load', () => {
             headers: {
                 "content-type": 'application/json'
             }
-        })
-        location.reload();
+        }).then(res => res.status === 403 ? location.replace("/pages/notAllowed.html") : location.reload())
     }
-
-
     actualizarForm.addEventListener('submit', putPaciente);
+
+    /* -------------------------------------------------------------------------- */
+            /*                                BORRAR PACIENTE                                */
+    /* -------------------------------------------------------------------------- */
+
+            const deletePaciente = (e) => {
+                e.preventDefault()
+
+                const id = e.target[0].value;
+
+                fetch(ENDPOINT + `pacientes/admin/borrar?id=${id}`, {method: "DELETE"}).then(res => res.status === 403 ? location.replace("/pages/notAllowed.html") : location.reload())
+
+            }
+
+    borrarForm.addEventListener('submit', deletePaciente);
     getPacientes();
 })

@@ -28,11 +28,17 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .cors()
                 .disable()
                 .authorizeRequests()
-                .antMatchers("/pacientes", "/pacientes/buscar", "/pacientes/buscar/mail"
-                        , "/odontologos", "/odontologos/buscar", "/odontologos/buscarXnombre"
-                        , "/turnos", "/turnos/buscar")
-                .hasRole("ROLE_USER").anyRequest()
-                .authenticated().and().formLogin();
+                .antMatchers("/pacientes"
+                        , "/odontologos"
+                        , "/turnos")
+                .hasAnyRole("USER", "ADMIN")
+                .and()
+                .authorizeRequests()
+                .antMatchers("/pacientes/admin/**"
+                ,"/odontologos/admin/**"
+                ,"/turnos/admin/**")
+                .hasRole("ADMIN")
+                .anyRequest().authenticated().and().formLogin();
 
     }
 

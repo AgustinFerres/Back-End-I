@@ -27,9 +27,10 @@ window.addEventListener('load', () => {
         fetch(ENDPOINT + 'odontologos')
         .then(res => res.json())
         .then(data => {
-            odontologoSkeleton.forEach(item => item.setAttribute('id','oculto'))
-            crearArticle(data);
-
+            if (data.length > 0){
+                odontologoSkeleton.forEach(item => item.setAttribute('id','oculto'))
+                crearArticle(data);
+            }
         })
         .catch(err => console.log(err))
 
@@ -55,9 +56,10 @@ window.addEventListener('load', () => {
         fetch(ENDPOINT + 'pacientes')
         .then(res => res.json())
         .then(data => {
-            pacienteSkeleton.forEach(item => item.setAttribute('id','oculto'))
-            crearArticle(data);
-
+            if (data.length > 0){
+                pacienteSkeleton.forEach(item => item.setAttribute('id','oculto'))
+                crearArticle(data);
+            }
         })
         .catch(err => console.log(err))
     }
@@ -69,9 +71,9 @@ window.addEventListener('load', () => {
 
             arr.forEach(async turno => {
 
-                const odontologo = await fetch(ENDPOINT + `odontologos/buscar?id=${turno.idOdontologo}`).then(res => res.json()).then(data => data).catch(err => console.log(err))
+                const odontologo = await fetch(ENDPOINT + `odontologos/admin/buscar?id=${turno.idOdontologo}`).then(res => res.json()).then(data => data).catch(err => console.log(err))
 
-                const paciente = await fetch(ENDPOINT + `pacientes/buscar?id=${turno.idPaciente}`).then(res => res.json()).then(data => data).catch(err => console.log(err))
+                const paciente = await fetch(ENDPOINT + `pacientes/admin/buscar?id=${turno.idPaciente}`).then(res => res.json()).then(data => data).catch(err => console.log(err))
 
                 turnoSection.innerHTML += `
                     <article >
@@ -87,9 +89,10 @@ window.addEventListener('load', () => {
         fetch(ENDPOINT + `turnos`)
         .then(res => res.json())
         .then(data => {
-            turnoSkeleton.forEach(item => item.setAttribute('id','oculto'))
-            crearArticle(data);
-
+            if (data.length > 0){
+                turnoSkeleton.forEach(item => item.setAttribute('id','oculto'))
+                crearArticle(data);
+            }
         })
         .catch(err => console.log(err))
 

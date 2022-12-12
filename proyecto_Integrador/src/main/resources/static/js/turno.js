@@ -8,13 +8,14 @@ window.addEventListener('load', () => {
     const buscarForm = document.querySelector('.buscar form');
     const agregarForm = document.querySelector('.agregar form');
     const actualizarForm = document.querySelector('.actualizar form');
+    const borrarForm = document.querySelector('.borrar form');
 
 
 
     const ENDPOINT = 'http://localhost:8080/'
 
     /* -------------------------------------------------------------------------- */
-    /*                                 SELECT ALL                                 */
+              /*                                 SELECT ALL                                 */
     /* -------------------------------------------------------------------------- */
     const getTurnos =  (e) => {
 
@@ -23,9 +24,9 @@ window.addEventListener('load', () => {
 
             arr.forEach(async turno => {
 
-                const odontologo = await fetch(ENDPOINT + `odontologos/buscar?id=${turno.idOdontologo}`).then(res => res.json()).then(data => data).catch(err => console.log(err));
+                const odontologo = await fetch(ENDPOINT + `odontologos/admin/buscar?id=${turno.idOdontologo}`).then(res => res.json()).then(data => data).catch(err => console.log(err));
 
-                const paciente = await fetch(ENDPOINT + `pacientes/buscar?id=${turno.idPaciente}`).then(res => res.json()).then(data => data).catch(err => console.log(err));
+                const paciente = await fetch(ENDPOINT + `pacientes/admin/buscar?id=${turno.idPaciente}`).then(res => res.json()).then(data => data).catch(err => console.log(err));
 
                 turnoSection.innerHTML += `
                 <article >
@@ -41,8 +42,10 @@ window.addEventListener('load', () => {
         fetch(ENDPOINT + `turnos`)
         .then(res => res.json())
         .then(data => {
-            turnoSkeleton.forEach(item => item.setAttribute('id','oculto'))
-            crearArticle(data);
+            if (data.length > 0){
+                turnoSkeleton.forEach(item => item.setAttribute('id','oculto'))
+                crearArticle(data);
+            }
 
         })
         .catch(err => console.log(err));
@@ -52,7 +55,7 @@ window.addEventListener('load', () => {
 
 
     /* -------------------------------------------------------------------------- */
-    /*                                SELECT BY ID                                */
+              /*                                SELECT BY ID                                */
     /* -------------------------------------------------------------------------- */
     const getTurno = (e) => {
 
@@ -61,9 +64,9 @@ window.addEventListener('load', () => {
 
         const crearArticle = async (turno) => {
 
-            const odontologo = await fetch(ENDPOINT + `odontologos/buscar?id=${turno.idOdontologo}`).then(res => res.json()).then(data => data).catch(err => console.log(err));
+            const odontologo = await fetch(ENDPOINT + `odontologos/admin/buscar?id=${turno.idOdontologo}`).then(res => res.json()).then(data => data).catch(err => console.log(err));
 
-            const paciente = await fetch(ENDPOINT + `pacientes/buscar?id=${turno.idPaciente}`).then(res => res.json()).then(data => data).catch(err => console.log(err));
+            const paciente = await fetch(ENDPOINT + `pacientes/admin/buscar?id=${turno.idPaciente}`).then(res => res.json()).then(data => data).catch(err => console.log(err));
 
             turnoBuscadoSection.innerHTML = `
                 <article class='turno'>
@@ -89,8 +92,8 @@ window.addEventListener('load', () => {
             crossBuscado.addEventListener('click', cerrarPopUp)
         }
 
-        fetch(ENDPOINT + `turnos/buscar?id=${id}`)
-        .then(res => res.json())
+        fetch(ENDPOINT + `turnos/admin/buscar?id=${id}`)
+        .then(res => res => res.status === 403 ? location.replace("/pages/notAllowed.html") : res.json())
         .then(data => {
             turnoBuscadoSection.removeAttribute('id')
             crearArticle(data);
@@ -109,7 +112,7 @@ window.addEventListener('load', () => {
 
 
     /* -------------------------------------------------------------------------- */
-    /*                             AGREGAR turno                             */
+                /*                             AGREGAR turno                             */
     /* -------------------------------------------------------------------------- */
     const postTurno = (e) => {
 
@@ -119,7 +122,7 @@ window.addEventListener('load', () => {
         const idPaciente = e.target[1].value;
         const fecha = e.target[2].value;
 
-        fetch(ENDPOINT + 'turnos',{
+        fetch(ENDPOINT + 'turnos/admin',{
             method: "POST",
             body: JSON.stringify({
                 idOdontologo,
@@ -131,8 +134,7 @@ window.addEventListener('load', () => {
             }
         }
 
-        )
-        location.reload();
+        ).then(res => res.status === 403 ? location.replace("/pages/notAllowed.html") : location.reload())
     }
 
     agregarForm.addEventListener('submit', postTurno)
@@ -140,7 +142,7 @@ window.addEventListener('load', () => {
 
 
     /* -------------------------------------------------------------------------- */
-    /*                            ACTUALIZAR turno                           */
+                /*                            ACTUALIZAR turno                           */
     /* -------------------------------------------------------------------------- */
     const putTurno = (e) => {
 
@@ -151,7 +153,7 @@ window.addEventListener('load', () => {
         const idPaciente = e.target[2].value;
         const fecha = e.target[3].value;
 
-        fetch(ENDPOINT + 'turnos',{
+        fetch(ENDPOINT + 'turnos/admin',{
             method: "POST",
             body: JSON.stringify({
                 id,
@@ -162,11 +164,23 @@ window.addEventListener('load', () => {
             headers: {
                 "content-type": 'application/json'
             }
-        })
-        location.reload();
+        }).then(res => res.status === 403 ? location.replace("/pages/notAllowed.html") : location.reload())
     }
-
-
     actualizarForm.addEventListener('submit', putTurno);
+
+    /* -------------------------------------------------------------------------- */
+            /*                                BORRAR TURNO                                */
+    /* -------------------------------------------------------------------------- */
+
+        const deleteTurno = (e) => {
+            e.preventDefault()
+
+            const id = e.target[0].value;
+
+            fetch(ENDPOINT + `turnos/admin/borrar?id=${id}`, {method: "DELETE"}).then(res => res.status === 403 ? location.replace("/pages/notAllowed.html") : location.reload())
+
+        }
+
+    borrarForm.addEventListener('submit', deleteTurno);
     getTurnos();
 })
