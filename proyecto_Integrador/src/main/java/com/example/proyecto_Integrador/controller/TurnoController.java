@@ -7,6 +7,7 @@ import com.example.proyecto_Integrador.exception.ResourceNotFoundException;
 import com.example.proyecto_Integrador.service.OdontologoService;
 import com.example.proyecto_Integrador.service.PacienteService;
 import com.example.proyecto_Integrador.service.TurnoService;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -26,9 +27,12 @@ public class TurnoController {
     private PacienteService pacienteService;
     @Autowired
     private OdontologoService odontologoService;
+    private Logger logger = Logger.getLogger(TurnoController.class);
 
     @PostMapping("/admin")
     public ResponseEntity<TurnoDTO> guardar (@RequestBody TurnoDTO turnoDTO) throws BadRequestException {
+        logger.info("Se inicio una peticion para agregar un turno");
+
         if (pacienteService.buscar(turnoDTO.getIdPaciente()).isPresent() && odontologoService.buscar(turnoDTO.getIdOdontologo()).isPresent()){
             return ResponseEntity.ok(turnoService.guardar(turnoDTO));
         }
@@ -36,6 +40,8 @@ public class TurnoController {
     }
     @GetMapping("/admin/buscar")
     public ResponseEntity<Optional<TurnoDTO>> buscar (@RequestParam("id") Long id) throws ResourceNotFoundException {
+        logger.info("Se inicio una peticion de busqueda de un turno");
+
         Optional<TurnoDTO> turnoBuscado = turnoService.buscar(id);
         if (turnoBuscado.isPresent()) {
             return ResponseEntity.ok(turnoService.buscar(id));
@@ -44,6 +50,8 @@ public class TurnoController {
     }
     @PutMapping("/admin")
     public ResponseEntity<String> actualizar (@RequestBody TurnoDTO turnoDTO) throws BadRequestException, ResourceNotFoundException {
+        logger.info("Se inicio una peticion para actualizr un turno");
+
         Optional<TurnoDTO> turnoBuscado = turnoService.buscar(turnoDTO.getId());
         if (turnoBuscado.isPresent()){
             if (pacienteService.buscar(turnoDTO.getIdPaciente()).isPresent() && odontologoService.buscar(turnoDTO.getIdOdontologo()).isPresent()){
@@ -56,6 +64,8 @@ public class TurnoController {
     }
     @DeleteMapping("/admin/borrar")
     public ResponseEntity<String> eliminar (@RequestParam("id") Long id) throws ResourceNotFoundException {
+        logger.info("Se inicio una peticion para borrar un turno");
+
         Optional<TurnoDTO> turnoBuscado = turnoService.buscar(id);
         if (turnoBuscado.isPresent()){
             turnoService.eliminar(id);
@@ -67,6 +77,8 @@ public class TurnoController {
 
     @GetMapping
     public ResponseEntity<List<TurnoDTO>> buscarTodos () {
+        logger.info("Se inicio una peticion para listar todos los turnos");
+
         return ResponseEntity.ok(turnoService.buscarTodos());
     }
 }
