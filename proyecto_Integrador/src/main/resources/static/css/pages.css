@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main > div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+main > div > section {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  height: 80vh;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+main > div > section::-webkit-scrollbar {
+  display: none;
+}
+main > div > section > article {
+  width: 100%;
+}
+main > div > section > article.buscar > form {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  font-size: 1.2rem;
+  padding: 50px;
+  border-radius: 15px;
+  background-color: #373737;
+  -webkit-box-shadow: 0px 0px 15px #777777;
+          box-shadow: 0px 0px 15px #777777;
+}
+main > div > section > article.buscar > form > legend {
+  text-align: center;
+  font-size: 2rem;
+}
+main > div > section > article.buscar > form > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+main > div > section > article.buscar > form > div > div {
+  width: 30vw;
+  background-image: linear-gradient(90deg, #a1d9ed 0px, rgba(255, 255, 255, 0.87) 10px, #53c4ed 0px);
+  border-radius: 30px;
+  text-align: center;
+  -webkit-animation: 2s neon infinite ease-in-out;
+          animation: 2s neon infinite ease-in-out;
+  padding: 3px;
+}
+main > div > section > article.buscar > form > div > div > input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: #343434;
+  color: rgba(255, 255, 255, 0.87);
+}
+main > div > section > article.buscar > form > div > div > input:focus, main > div > section > article.buscar > form > div > div > input:focus-visible {
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+main > div > section > article.buscar > form > div > button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  font-weight: bold;
+  gap: 5px;
+  width: 25%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  background-color: #0789b8;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.87);
+  -webkit-box-shadow: 0px 0px 10px black inset;
+          box-shadow: 0px 0px 10px black inset;
+}
+main > div > section > article.buscar > form > div > button:active {
+  -webkit-animation: 1s click;
+          animation: 1s click;
+}
+main > div > section > article.buscar > form > div > button > img {
+  width: 30%;
+}
+main > div > section > article.agregar > form, main > div > section article.actualizar > form {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  font-size: 1.2rem;
+  padding: 50px;
+  border-radius: 15px;
+  background-color: #373737;
+  -webkit-box-shadow: 0px 0px 15px #777777;
+          box-shadow: 0px 0px 15px #777777;
+}
+main > div > section > article.agregar > form > legend, main > div > section article.actualizar > form > legend {
+  font-size: 2rem;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+main > div > section > article.agregar > form div > label, main > div > section article.actualizar > form div > label {
+  margin-left: 20px;
+}
+main > div > section > article.agregar > form div > div, main > div > section article.actualizar > form div > div {
+  width: 30vw;
+  background-image: linear-gradient(90deg, #a1d9ed 0px, rgba(255, 255, 255, 0.87) 10px, #53c4ed 0px);
+  border-radius: 30px;
+  text-align: center;
+  -webkit-animation: 2s neon infinite ease;
+          animation: 2s neon infinite ease;
+  padding: 2px;
+}
+main > div > section > article.agregar > form div > div > input, main > div > section article.actualizar > form div > div > input {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: #343434;
+  color: rgba(255, 255, 255, 0.87);
+}
+main > div > section > article.agregar > form div > div > input:focus, main > div > section > article.agregar > form div > div > input:focus-visible, main > div > section article.actualizar > form div > div > input:focus, main > div > section article.actualizar > form div > div > input:focus-visible {
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+main > div > section > article.agregar > form > fieldset, main > div > section article.actualizar > form > fieldset {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  padding: 20px 0px;
+  width: 100%;
+}
+main > div > section > article.agregar > form > fieldset > legend, main > div > section article.actualizar > form > fieldset > legend {
+  margin-left: 30px;
+}
+main > div > section > article.agregar > form > fieldset > div > div, main > div > section article.actualizar > form > fieldset > div > div {
+  width: 12vw;
+  -webkit-animation: neon-domicilio 2s infinite ease;
+          animation: neon-domicilio 2s infinite ease;
+}
+main > div > section > article.agregar > form > div.buttonContainer, main > div > section article.actualizar > form > div.buttonContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main > div > section > article.agregar > form > div.buttonContainer > button, main > div > section article.actualizar > form > div.buttonContainer > button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  padding: 20px;
+  width: 40%;
+  border-radius: 15px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.87);
+}
+main > div > section > article.agregar > form > div.buttonContainer > button:active, main > div > section article.actualizar > form > div.buttonContainer > button:active {
+  -webkit-animation: 1s click;
+          animation: 1s click;
+}
+main > div > section > article.agregar > form > div.buttonContainer > button:nth-child(1), main > div > section article.actualizar > form > div.buttonContainer > button:nth-child(1) {
+  background-color: #c25048;
+  -webkit-box-shadow: 0px 0px 10px black inset;
+          box-shadow: 0px 0px 10px black inset;
+}
+main > div > section > article.agregar > form > div.buttonContainer > button:nth-child(2), main > div > section article.actualizar > form > div.buttonContainer > button:nth-child(2) {
+  background-color: #0789b8;
+  -webkit-box-shadow: 0px 0px 10px black inset;
+          box-shadow: 0px 0px 10px black inset;
+}
+main > div > section > article.agregar > form > div.buttonContainer > button:nth-child(2):hover, main > div > section article.actualizar > form > div.buttonContainer > button:nth-child(2):hover {
+  font-display: #242424;
+}
+main > div > section.odontologos, main > div section.pacientes, main > div section.turnos {
+  width: 30%;
+}
+main > div > section.odontologos > article, main > div section.pacientes > article, main > div section.turnos > article {
+  width: auto;
+}
+
+.pop-up {
+  position: absolute;
+  width: 100vw;
+  height: 80vh;
+  background-color: rgba(36, 36, 36, 0.7882352941);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.pop-up > article {
+  position: relative;
+  top: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 1.2rem;
+  width: auto;
+  background-color: #0789b8;
+  padding: 20px;
+  border-radius: 30px;
+  opacity: 1;
+}
+.pop-up > article > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pop-up > article > div > .fecha {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-weight: 700;
+}
+.pop-up > article > div > img {
+  width: 20%;
+  border-radius: 50%;
+}
+.pop-up > article > div > div {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+.pop-up > article > div > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.pop-up > article > button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 10px;
+  width: auto;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #c25048;
+  -webkit-box-shadow: 0px 0px 5px black inset;
+          box-shadow: 0px 0px 5px black inset;
+}
+.pop-up > article > button:active {
+  -webkit-animation: 1s click;
+          animation: 1s click;
+}
+
+@-webkit-keyframes neon {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 30vw;
+  }
+}
+
+@keyframes neon {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 30vw;
+  }
+}
+@-webkit-keyframes neon-domicilio {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 12vw;
+  }
+}
+@keyframes neon-domicilio {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 12vw;
+  }
+}
+@-webkit-keyframes click {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes click {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}

@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.security.RolesAllowed;
 import java.util.List;
 import java.util.Optional;
 
@@ -18,12 +19,10 @@ public class PacienteController {
     @Autowired
     private PacienteService pacienteService;
 
-
     @PostMapping
     public ResponseEntity<Paciente> guardar (@RequestBody Paciente paciente) {
         return ResponseEntity.ok(pacienteService.guardar(paciente));
     }
-
     @GetMapping("/buscar")
     public ResponseEntity<Optional<Paciente>> buscar (@RequestParam("id") Long id) throws ResourceNotFoundException {
         Optional<Paciente> pacienteBuscado = pacienteService.buscar(id);
@@ -42,7 +41,6 @@ public class PacienteController {
         }
         throw new ResourceNotFoundException("No se encontro un paciente de mail = " + email);
     }
-
     @PutMapping
     public ResponseEntity<String> actualizar (@RequestBody Paciente paciente) throws ResourceNotFoundException {
         Optional<Paciente> pacienteBuscado = pacienteService.buscar(paciente.getId());
@@ -52,7 +50,6 @@ public class PacienteController {
         }
         throw new ResourceNotFoundException("No se encontro un paciente de id = " + paciente.getId());
     }
-
     @DeleteMapping("/borrar")
     public ResponseEntity<String> eliminar (@RequestParam("id") Long id) throws ResourceNotFoundException {
         Optional<Paciente> pacienteBuscado = pacienteService.buscar(id);

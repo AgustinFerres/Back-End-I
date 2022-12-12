@@ -10,6 +10,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.web.util.matcher.RequestMatcher;
 
 @Configuration
 @EnableWebSecurity
@@ -22,9 +23,16 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.csrf().disable().cors().disable().authorizeRequests().antMatchers("/pacientes", "/odontologos", "/turnos").permitAll().anyRequest().authenticated().and().formLogin();
-//        http.csrf().disable().cors().disable().authorizeRequests().antMatchers("/odontologos").permitAll().anyRequest().authenticated().and().formLogin();
-//        http.csrf().disable().cors().disable().authorizeRequests().antMatchers("/turnos").permitAll().anyRequest().authenticated().and().formLogin();
+        http.csrf()
+                .disable()
+                .cors()
+                .disable()
+                .authorizeRequests()
+                .antMatchers("/pacientes", "/pacientes/buscar", "/pacientes/buscar/mail"
+                        , "/odontologos", "/odontologos/buscar", "/odontologos/buscarXnombre"
+                        , "/turnos", "/turnos/buscar")
+                .hasRole("ROLE_USER").anyRequest()
+                .authenticated().and().formLogin();
 
     }
 

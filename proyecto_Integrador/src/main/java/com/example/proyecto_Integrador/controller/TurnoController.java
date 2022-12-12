@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.security.RolesAllowed;
 import java.util.List;
 import java.util.Optional;
 
@@ -26,7 +27,6 @@ public class TurnoController {
     @Autowired
     private OdontologoService odontologoService;
 
-
     @PostMapping
     public ResponseEntity<TurnoDTO> guardar (@RequestBody TurnoDTO turnoDTO) throws BadRequestException {
         if (pacienteService.buscar(turnoDTO.getIdPaciente()).isPresent() && odontologoService.buscar(turnoDTO.getIdOdontologo()).isPresent()){
@@ -34,7 +34,6 @@ public class TurnoController {
         }
         throw new BadRequestException("No se puede registrar un turno cuando no existe un odontologo y/o paciente");
     }
-
     @GetMapping("/buscar")
     public ResponseEntity<Optional<TurnoDTO>> buscar (@RequestParam("id") Long id) throws ResourceNotFoundException {
         Optional<TurnoDTO> turnoBuscado = turnoService.buscar(id);
@@ -43,7 +42,6 @@ public class TurnoController {
         }
         throw new ResourceNotFoundException("No existe turno de id = " + id + " en la base de datos");
     }
-
     @PutMapping
     public ResponseEntity<String> actualizar (@RequestBody TurnoDTO turnoDTO) throws BadRequestException, ResourceNotFoundException {
         Optional<TurnoDTO> turnoBuscado = turnoService.buscar(turnoDTO.getId());
@@ -56,7 +54,6 @@ public class TurnoController {
         }
         throw new ResourceNotFoundException("No existe turno de id = " + turnoDTO.getId() + " en la base de datos");
     }
-
     @DeleteMapping("/borrar")
     public ResponseEntity<String> eliminar (@RequestParam("id") Long id) throws ResourceNotFoundException {
         Optional<TurnoDTO> turnoBuscado = turnoService.buscar(id);

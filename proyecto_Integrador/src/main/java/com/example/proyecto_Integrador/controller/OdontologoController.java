@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.security.RolesAllowed;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
@@ -19,7 +20,6 @@ public class OdontologoController {
 
     @Autowired
     private OdontologoService odontologoService;
-
 
     @PostMapping
     public ResponseEntity<Odontologo> guardar (@RequestBody Odontologo odontologo) {
@@ -35,7 +35,6 @@ public class OdontologoController {
         }
         throw new ResourceNotFoundException("No se encontro un odontologo de id = " + id);
     }
-
     @PutMapping
     public ResponseEntity<String> actualizar (@RequestBody Odontologo odontologo) {
             odontologoService.actualizar(odontologo);
@@ -52,7 +51,7 @@ public class OdontologoController {
         throw new ResourceNotFoundException("No existe un odontologo con id = " + id);
     }
 
-    @GetMapping
+    @GetMapping("/buscarTodos")
     public ResponseEntity<List<Odontologo>> buscarTodos () {
         return ResponseEntity.ok(odontologoService.buscarTodos());
     }

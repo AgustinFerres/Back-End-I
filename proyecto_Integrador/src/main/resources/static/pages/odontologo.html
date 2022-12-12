@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muelitas</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <script src="../js/odontologo.js"></script>
+</head>
+<body>
+<div>
+    <header>
+        <div>
+            <div>
+                <span><a href="../index.html">🦷</a></span>
+                <h1>Muelitas</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./odontologo.html">Odontologos</a></li>
+                    <li><a href="./paciente.html">Pacientes</a></li>
+                    <li><a href="./turnos.html">Turnos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="pop-up" id="oculto">
+    </section>
+    <main>
+        <div>
+            <section>
+                <article class="buscar">
+                    <form action="#">
+                        <legend>Buscar Odontologo</legend>
+                        <div>
+                            <div>
+                                <input type="text" name="search" placeholder="eg: Pablo Perez">
+                            </div>
+                            <button type="submit">Buscar<img src="../assets/magnifying-glass.png" alt=""></button>
+                        </div>
+                    </form>
+                </article>
+                <article class="agregar">
+                    <form action="#">
+                        <legend>Agregar Odontologo</legend>
+                        <div>
+                            <label for="nombre">Nombre</label>
+                            <div>
+                                <input type="text" name="nombre" id="nombre" placeholder="eg: Pablo">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="apellido">Apellido</label>
+                            <div>
+                                <input type="text" name="apellido" id="apellido" placeholder="eg: Perez">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="matricula">Matricula</label>
+                            <div>
+                                <input type="number" name="matricula" id="matricula" placeholder="eg: 4321">
+                            </div>
+
+                        </div>
+                        <div class="buttonContainer">
+                            <button type="reset">Limpiar</button>
+                            <button type="submit">Agregar</button>
+                        </div>
+                    </form>
+                </article>
+                <article class="actualizar">
+                    <form action="#">
+                        <legend>Actualizar Odontologo</legend>
+                        <div>
+                            <label for="id">Id</label>
+                            <div>
+                                <input type="number" name="id" id="id" placeholder="eg: 1">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="nombre">Nombre</label>
+                            <div>
+                                <input type="text" name="nombre" id="nombre" placeholder="eg: Pablo">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="apellido">Apellido</label>
+                            <div>
+                                <input type="text" name="apellido" id="apellido" placeholder="eg: Perez">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="matricula">Matricula</label>
+                            <div>
+                                <input type="number" name="matricula" id="matricula" placeholder="eg: 4321">
+                            </div>
+
+                        </div>
+                        <div class="buttonContainer">
+                            <button type="reset">Limpiar</button>
+                            <button type="submit">Actualizar</button>
+                        </div>
+                    </form>
+                </article>
+            </section>
+            <hr>
+            <section class="odontologos">
+                <h2>Odontologos</h2>
+                <article id="oculto">
+                    <img src="../assets/user-profile-300x300.jpg" alt="">
+                    <div>
+                        <h2>Nombre y Apellido</h2>
+                        <p>Matricula</p>
+                    </div>
+                </article>
+                <article class="skeleton">
+                    <div class="profile"></div>
+                    <div class="text">
+                        <h2></h2>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="skeleton">
+                    <div class="profile"></div>
+                    <div class="text">
+                        <h2></h2>
+                        <p></p>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+</div>
+</body>
+</html>

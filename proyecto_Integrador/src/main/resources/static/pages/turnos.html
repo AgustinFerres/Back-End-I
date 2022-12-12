@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muelitas</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <script src="../js/turno.js"></script>
+</head>
+<body>
+<div>
+    <header>
+        <div>
+            <div>
+                <span><a href="../index.html">🦷</a></span>
+                <h1>Muelitas</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./odontologo.html">Odontologos</a></li>
+                    <li><a href="./paciente.html">Pacientes</a></li>
+                    <li><a href="./turnos.html">Turnos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="pop-up" id="oculto">
+    </section>
+    <main>
+        <div>
+            <section>
+                <article class="buscar">
+                    <form action="#">
+                        <legend>Buscar Turno</legend>
+                        <div>
+                            <div>
+                                <input type="number" name="search" placeholder="eg: 1">
+                            </div>
+                            <button type="submit">Buscar<img src="../assets/magnifying-glass.png" alt=""></button>
+                        </div>
+                    </form>
+                </article>
+                <article class="agregar">
+                    <form action="#">
+                        <legend>Agregar Turno</legend>
+                        <div>
+                            <label for="idOdontologo">Id Odontologo</label>
+                            <div>
+                                <input type="number" name="idOdontologo" id="idOdontologo" placeholder="eg: 1">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="idPaciente">Id Paciente</label>
+                            <div>
+                                <input type="number" name="idPaciente" id="idPaciente" placeholder="eg: 2">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="fecha">Fecha</label>
+                            <div>
+                                <input type="date" name="fecha" id="fecha" placeholder="ej: dd/mm/yyyy">
+                            </div>
+                        </div>
+
+                        </fieldset>
+                        <div class="buttonContainer">
+                            <button type="reset">Limpiar</button>
+                            <button type="submit">Agregar</button>
+                        </div>
+                    </form>
+                </article>
+                <article class="actualizar">
+                    <form action="#">
+                        <legend>Actualizar Turno</legend>
+                        <div>
+                            <label for="id">Id</label>
+                            <div>
+                                <input type="number" name="id" id="id" placeholder="eg: 1">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="idOdontologo">Id Odontologo</label>
+                            <div>
+                                <input type="number" name="idOdontologo" id="idOdontologo" placeholder="eg: 1">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="idPaciente">Id Paciente</label>
+                            <div>
+                                <input type="number" name="idPaciente" id="idPaciente" placeholder="eg: 2">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="fecha">Fecha</label>
+                            <div>
+                                <input type="date" name="fecha" id="fecha" placeholder="ej: dd/mm/yyyy">
+                            </div>
+                        </div>
+                        </fieldset>
+                        <div class="buttonContainer">
+                            <button type="reset">Limpiar</button>
+                            <button type="submit">Actualizar</button>
+                        </div>
+                    </form>
+                </article>
+            </section>
+            <hr>
+            <section class="turnos">
+                <h2>Turnos</h2>
+                <article id="oculto">
+                    <div>
+                        <h2>Odontologo Nombre</h2>
+                        <p>Paciente Apellido</p>
+                        <p>Fecha</p>
+                    </div>
+                </article>
+                <article class="skeleton">
+                    <div class="text">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="skeleton">
+                    <div class="text">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="skeleton">
+                    <div class="text">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="skeleton">
+                    <div class="text">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+</div>
+</body>
+</html>

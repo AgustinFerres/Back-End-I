@@ -15,7 +15,7 @@ header {
   background: linear-gradient(0deg, #a1d9ed, #7acfed, #53c4ed);
   width: 100%;
   padding: 30px;
-  border-radius: 15px;
+  border-radius: 0px 0px 15px 15px;
 }
 header > div {
   font-size: 2rem;
@@ -54,8 +54,8 @@ header > div > div > span > a {
   color: rgba(255, 255, 255, 0.87);
 }
 header > div > div > span:hover {
-  -webkit-animation: retor 1s;
-          animation: retor 1s;
+  -webkit-animation: retor 0.5s;
+          animation: retor 0.5s;
 }
 header > div nav {
   width: 40%;
@@ -69,14 +69,10 @@ header > div nav > ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-header > div nav > ul > li:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
 header > div nav > ul a {
   text-decoration: none;
   color: var(--white);
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 header > div nav > ul a:hover {
   color: #0789b8;
@@ -141,9 +137,6 @@ main > div > section > article > img {
 }
 main > div > section > article > div {
   width: 100%;
-}
-main > div > section.turnos > article {
-  width: 30%;
 }
 main > div > section > article.skeleton {
   display: -webkit-box;
