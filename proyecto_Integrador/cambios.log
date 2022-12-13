@@ -275,3 +275,284 @@ INSERT INTO PACIENTE VALUES (DEFAULT,?,?,?,?,?) [21002-214]
 [2022-11-21 09:11:20] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
 [2022-11-21 09:11:29] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
 [2022-11-21 09:11:30] [ INFO ] [OdontologoIDaoH2:160] Iniciando la busqueda de todos los odontologos
+[2022-12-12 12:39:05] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 12:39:05] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 12:39:05] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 12:39:18] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 12:39:24] [ INFO ] [OdontologoController:27] Se inicio una peticion para agregar un odontologo
+[2022-12-12 12:39:25] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 12:39:27] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 12:39:41] [ INFO ] [PacienteController:26] Se inicio una peticion para agregar un paciente
+[2022-12-12 12:39:42] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 12:39:48] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 12:40:03] [ INFO ] [TurnoController:32] Se inicio una peticion para agregar un turno
+[2022-12-12 12:40:03] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 12:40:03] [ INFO ] [OdontologoController:34] Se inicio una peticion de busqueda de un odontologo
+[2022-12-12 12:40:03] [ INFO ] [PacienteController:32] Se inicio una peticion de busqueda de un paciente
+[2022-12-12 12:40:05] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 12:40:05] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 12:40:05] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 12:40:05] [ INFO ] [OdontologoController:34] Se inicio una peticion de busqueda de un odontologo
+[2022-12-12 12:40:05] [ INFO ] [PacienteController:32] Se inicio una peticion de busqueda de un paciente
+[2022-12-12 12:40:10] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 12:40:24] [ INFO ] [OdontologoController:27] Se inicio una peticion para agregar un odontologo
+[2022-12-12 12:40:24] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 12:40:33] [ INFO ] [OdontologoController:79] Se inicio una peticion de busqueda de un odontologo
+[2022-12-12 12:40:37] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 12:40:41] [ INFO ] [PacienteController:44] Se inicio una peticion de busqueda de un paciente
+[2022-12-12 12:41:05] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 12:41:24] [ INFO ] [PacienteController:68] Se inicio una peticion para borrar un paciente
+[2022-12-12 12:41:25] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 12:41:28] [ INFO ] [PacienteController:68] Se inicio una peticion para borrar un paciente
+[2022-12-12 12:41:28] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 12:41:31] [ INFO ] [PacienteController:68] Se inicio una peticion para borrar un paciente
+[2022-12-12 12:41:31] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 12:41:32] [ INFO ] [PacienteController:68] Se inicio una peticion para borrar un paciente
+[2022-12-12 12:41:33] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 12:41:34] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 12:41:34] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 12:41:34] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 12:41:35] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 12:41:35] [ INFO ] [OdontologoController:34] Se inicio una peticion de busqueda de un odontologo
+[2022-12-12 12:41:35] [ INFO ] [PacienteController:32] Se inicio una peticion de busqueda de un paciente
+[2022-12-12 12:41:36] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 12:41:36] [ INFO ] [OdontologoController:34] Se inicio una peticion de busqueda de un odontologo
+[2022-12-12 12:41:36] [ INFO ] [PacienteController:32] Se inicio una peticion de busqueda de un paciente
+[2022-12-12 12:41:37] [ INFO ] [TurnoController:65] Se inicio una peticion para borrar un turno
+[2022-12-12 12:41:37] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 12:41:39] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 12:41:39] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 12:41:39] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 12:41:40] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 12:41:42] [ INFO ] [OdontologoController:59] Se inicio una peticion para borrar un odontologo
+[2022-12-12 12:41:42] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 12:41:45] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 12:41:45] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 12:41:45] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 12:46:30] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 12:46:30] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 12:46:30] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 12:46:34] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 12:46:42] [ INFO ] [PacienteController:26] Se inicio una peticion para agregar un paciente
+[2022-12-12 12:46:43] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 12:46:46] [ INFO ] [PacienteController:68] Se inicio una peticion para borrar un paciente
+[2022-12-12 12:46:46] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 12:46:59] [ INFO ] [PacienteController:26] Se inicio una peticion para agregar un paciente
+[2022-12-12 12:46:59] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 12:47:00] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 12:47:05] [ INFO ] [OdontologoController:27] Se inicio una peticion para agregar un odontologo
+[2022-12-12 12:47:06] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 12:47:07] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 12:47:14] [ INFO ] [TurnoController:32] Se inicio una peticion para agregar un turno
+[2022-12-12 12:47:15] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 12:47:21] [ INFO ] [TurnoController:32] Se inicio una peticion para agregar un turno
+[2022-12-12 12:47:21] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 12:47:28] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 12:47:28] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 12:47:28] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 12:47:30] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 12:47:35] [ INFO ] [TurnoController:32] Se inicio una peticion para agregar un turno
+[2022-12-12 12:47:36] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 12:47:41] [ INFO ] [TurnoController:32] Se inicio una peticion para agregar un turno
+[2022-12-12 12:47:41] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 12:47:54] [ INFO ] [TurnoController:32] Se inicio una peticion para agregar un turno
+[2022-12-12 12:47:57] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 12:50:51] [ INFO ] [TurnoController:32] Se inicio una peticion para agregar un turno
+[2022-12-12 12:50:54] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 12:50:58] [ INFO ] [TurnoController:32] Se inicio una peticion para agregar un turno
+[2022-12-12 12:51:01] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 12:52:54] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 12:53:02] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 12:53:10] [ INFO ] [OdontologoController:27] Se inicio una peticion para agregar un odontologo
+[2022-12-12 12:53:11] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 12:53:12] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 12:53:19] [ INFO ] [PacienteController:26] Se inicio una peticion para agregar un paciente
+[2022-12-12 12:53:19] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 12:53:33] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 12:53:39] [ INFO ] [TurnoController:32] Se inicio una peticion para agregar un turno
+[2022-12-12 12:53:39] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 12:53:39] [ INFO ] [OdontologoController:34] Se inicio una peticion de busqueda de un odontologo
+[2022-12-12 12:53:39] [ INFO ] [PacienteController:32] Se inicio una peticion de busqueda de un paciente
+[2022-12-12 12:54:04] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 12:54:06] [ INFO ] [PacienteController:44] Se inicio una peticion de busqueda de un paciente
+[2022-12-12 12:54:06] [ ERROR] [PacienteController:51] No se encontro un paciente
+[2022-12-12 12:54:15] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 12:54:15] [ INFO ] [OdontologoController:34] Se inicio una peticion de busqueda de un odontologo
+[2022-12-12 12:54:15] [ INFO ] [PacienteController:32] Se inicio una peticion de busqueda de un paciente
+[2022-12-12 12:54:17] [ INFO ] [TurnoController:41] Se inicio una peticion de busqueda de un turno
+[2022-12-12 12:54:27] [ INFO ] [TurnoController:41] Se inicio una peticion de busqueda de un turno
+[2022-12-12 12:57:20] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 12:57:26] [ INFO ] [OdontologoController:79] Se inicio una peticion de busqueda de un odontologo
+[2022-12-12 12:57:29] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 12:57:34] [ INFO ] [PacienteController:44] Se inicio una peticion de busqueda de un paciente
+[2022-12-12 12:59:23] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 12:59:23] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 12:59:23] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 12:59:26] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 12:59:34] [ INFO ] [PacienteController:26] Se inicio una peticion para agregar un paciente
+[2022-12-12 12:59:34] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 12:59:37] [ INFO ] [PacienteController:44] Se inicio una peticion de busqueda de un paciente
+[2022-12-12 13:01:10] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 13:01:10] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 13:01:10] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 13:01:14] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 13:01:21] [ INFO ] [PacienteController:26] Se inicio una peticion para agregar un paciente
+[2022-12-12 13:01:22] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 13:01:23] [ INFO ] [PacienteController:44] Se inicio una peticion de busqueda de un paciente
+[2022-12-12 13:02:25] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 13:02:25] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 13:02:25] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 13:05:15] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 13:05:19] [ INFO ] [OdontologoController:27] Se inicio una peticion para agregar un odontologo
+[2022-12-12 13:05:20] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 13:05:21] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 13:05:28] [ INFO ] [PacienteController:26] Se inicio una peticion para agregar un paciente
+[2022-12-12 13:05:29] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 13:05:31] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 13:05:35] [ INFO ] [TurnoController:32] Se inicio una peticion para agregar un turno
+[2022-12-12 13:05:35] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 13:05:36] [ INFO ] [OdontologoController:34] Se inicio una peticion de busqueda de un odontologo
+[2022-12-12 13:05:36] [ INFO ] [PacienteController:32] Se inicio una peticion de busqueda de un paciente
+[2022-12-12 13:05:38] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 13:05:38] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 13:05:38] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 13:05:38] [ INFO ] [OdontologoController:34] Se inicio una peticion de busqueda de un odontologo
+[2022-12-12 13:05:38] [ INFO ] [PacienteController:32] Se inicio una peticion de busqueda de un paciente
+[2022-12-12 13:05:42] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 13:05:49] [ INFO ] [OdontologoController:79] Se inicio una peticion de busqueda de un odontologo
+[2022-12-12 13:05:52] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 13:05:54] [ INFO ] [PacienteController:44] Se inicio una peticion de busqueda de un paciente
+[2022-12-12 13:06:16] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 13:06:16] [ INFO ] [OdontologoController:34] Se inicio una peticion de busqueda de un odontologo
+[2022-12-12 13:06:16] [ INFO ] [PacienteController:32] Se inicio una peticion de busqueda de un paciente
+[2022-12-12 13:06:18] [ INFO ] [TurnoController:41] Se inicio una peticion de busqueda de un turno
+[2022-12-12 13:06:18] [ INFO ] [OdontologoController:34] Se inicio una peticion de busqueda de un odontologo
+[2022-12-12 13:06:18] [ INFO ] [PacienteController:32] Se inicio una peticion de busqueda de un paciente
+[2022-12-12 13:09:33] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 13:09:33] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 13:09:33] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 13:09:37] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 13:09:39] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 13:09:39] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 13:09:39] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 13:09:54] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 13:09:54] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 13:09:54] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 13:09:56] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 13:09:57] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 13:09:57] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 13:09:58] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 13:10:04] [ INFO ] [OdontologoController:27] Se inicio una peticion para agregar un odontologo
+[2022-12-12 13:10:04] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 13:10:05] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 13:10:12] [ INFO ] [PacienteController:26] Se inicio una peticion para agregar un paciente
+[2022-12-12 13:10:13] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 13:10:14] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 13:10:18] [ INFO ] [TurnoController:32] Se inicio una peticion para agregar un turno
+[2022-12-12 13:10:19] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 13:10:19] [ INFO ] [OdontologoController:34] Se inicio una peticion de busqueda de un odontologo
+[2022-12-12 13:10:19] [ INFO ] [PacienteController:32] Se inicio una peticion de busqueda de un paciente
+[2022-12-12 13:10:22] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 13:10:22] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 13:10:22] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 13:10:22] [ INFO ] [OdontologoController:34] Se inicio una peticion de busqueda de un odontologo
+[2022-12-12 13:10:22] [ INFO ] [PacienteController:32] Se inicio una peticion de busqueda de un paciente
+[2022-12-12 13:10:29] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 13:10:29] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 13:10:29] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 13:10:47] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 13:10:49] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 13:10:49] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 13:10:49] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 13:10:50] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 13:11:05] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 13:11:05] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 13:11:05] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 13:13:45] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 13:13:45] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 13:13:45] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 13:13:48] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 13:13:53] [ INFO ] [OdontologoController:27] Se inicio una peticion para agregar un odontologo
+[2022-12-12 13:13:54] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 13:13:55] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 13:14:02] [ INFO ] [PacienteController:26] Se inicio una peticion para agregar un paciente
+[2022-12-12 13:14:03] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 13:14:04] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 13:14:07] [ INFO ] [TurnoController:32] Se inicio una peticion para agregar un turno
+[2022-12-12 13:14:07] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 13:14:07] [ INFO ] [OdontologoController:34] Se inicio una peticion de busqueda de un odontologo
+[2022-12-12 13:14:07] [ INFO ] [PacienteController:32] Se inicio una peticion de busqueda de un paciente
+[2022-12-12 13:14:09] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 13:14:09] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 13:14:09] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 13:14:19] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 13:14:19] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 13:14:19] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 13:14:22] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 13:14:36] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 13:14:36] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 13:14:36] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 13:18:05] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 13:18:05] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 13:18:05] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 13:18:08] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 13:18:12] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 20:37:31] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 20:37:31] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 20:37:31] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 20:37:35] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 20:37:39] [ INFO ] [OdontologoController:27] Se inicio una peticion para agregar un odontologo
+[2022-12-12 20:37:39] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 20:37:40] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 20:37:51] [ INFO ] [PacienteController:26] Se inicio una peticion para agregar un paciente
+[2022-12-12 20:37:51] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 20:37:52] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 20:37:56] [ INFO ] [TurnoController:32] Se inicio una peticion para agregar un turno
+[2022-12-12 20:37:56] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 20:37:56] [ INFO ] [OdontologoController:34] Se inicio una peticion de busqueda de un odontologo
+[2022-12-12 20:37:56] [ INFO ] [PacienteController:32] Se inicio una peticion de busqueda de un paciente
+[2022-12-12 20:38:02] [ INFO ] [TurnoController:41] Se inicio una peticion de busqueda de un turno
+[2022-12-12 20:38:02] [ INFO ] [OdontologoController:34] Se inicio una peticion de busqueda de un odontologo
+[2022-12-12 20:38:02] [ INFO ] [PacienteController:32] Se inicio una peticion de busqueda de un paciente
+[2022-12-12 20:38:08] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 20:38:08] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 20:38:08] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 20:50:08] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 20:50:08] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 20:50:08] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 20:50:10] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 20:50:12] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 20:50:12] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 20:50:12] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 20:50:21] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 20:50:21] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 20:50:21] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 20:50:24] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 20:50:28] [ INFO ] [OdontologoController:27] Se inicio una peticion para agregar un odontologo
+[2022-12-12 20:50:28] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 20:50:41] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 20:50:59] [ INFO ] [PacienteController:26] Se inicio una peticion para agregar un paciente
+[2022-12-12 20:50:59] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 20:51:01] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 20:51:12] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 20:51:12] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 20:51:12] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 20:51:13] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 20:55:02] [ INFO ] [TurnoController:32] Se inicio una peticion para agregar un turno
+[2022-12-12 20:55:03] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 20:55:05] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 20:55:05] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 20:55:05] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 20:55:23] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 20:55:34] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 20:55:34] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 20:55:34] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 20:57:12] [ INFO ] [OdontologoController:72] Se inicio una peticion para listar todos los odontologos
+[2022-12-12 20:57:12] [ INFO ] [PacienteController:81] Se inicio una peticion para listar todos los pacientes
+[2022-12-12 20:57:12] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 20:57:15] [ INFO ] [TurnoController:78] Se inicio una peticion para listar todos los turnos
+[2022-12-12 20:57:15] [ INFO ] [OdontologoController:34] Se inicio una peticion de busqueda de un odontologo
+[2022-12-12 20:57:15] [ INFO ] [PacienteController:32] Se inicio una peticion de busqueda de un paciente
+[2022-12-12 20:57:18] [ INFO ] [TurnoController:41] Se inicio una peticion de busqueda de un turno
+[2022-12-12 20:57:18] [ INFO ] [OdontologoController:34] Se inicio una peticion de busqueda de un odontologo
+[2022-12-12 20:57:18] [ INFO ] [PacienteController:32] Se inicio una peticion de busqueda de un paciente

@@ -69,7 +69,7 @@ public class TurnoServiceTest {
     @Test
     @Order(3)
     public void borrarTurno () {
-        pacienteService.eliminar(1L);
+        turnoService.eliminar(1L);
 
         List<TurnoDTO> resultadoActual = turnoService.buscarTodos();
 

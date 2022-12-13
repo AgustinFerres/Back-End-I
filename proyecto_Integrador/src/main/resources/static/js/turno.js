@@ -34,6 +34,7 @@ window.addEventListener('load', () => {
                         <h2> ${odontologo.nombre} ${odontologo.apellido} | nº: ${odontologo.matricula}</h2>
                         <p> paciente: ${paciente.nombre} ${paciente.apellido}</p>
                         <p> ${turno.fecha}<p/>
+                        <p>Id: ${turno.id}</p>
                     </div>
                 </article>
                 `
@@ -75,13 +76,14 @@ window.addEventListener('load', () => {
                             <h2>Odontologo</h2>
                             <h3>${odontologo.nombre} ${odontologo.apellido}</h3>
                             <p>Id: ${odontologo.id}</p>
-                            <p>Id: ${odontologo.matricula}</p>
+                            <p>Nº: ${odontologo.matricula}</p>
                         </div>
+                        <hr>
                         <div>
                             <h2>Paciente</h2>
                             <h3>${paciente.nombre} ${paciente.apellido}</h3>
                             <p>Id: ${paciente.id}</p>
-                            <p>Id: ${paciente.email}</p>
+                            <p>Email: ${paciente.email}</p>
                         </div>
                         <p class="fecha">Fecha: ${turno.fecha}<p/>
                     </div>
@@ -93,7 +95,7 @@ window.addEventListener('load', () => {
         }
 
         fetch(ENDPOINT + `turnos/admin/buscar?id=${id}`)
-        .then(res => res => res.status === 403 ? location.replace("/pages/notAllowed.html") : res.json())
+        .then(res => res.status === 403 ? location.replace("/pages/notAllowed.html") : res.json())
         .then(data => {
             turnoBuscadoSection.removeAttribute('id')
             crearArticle(data);
@@ -153,7 +155,7 @@ window.addEventListener('load', () => {
         const idPaciente = e.target[2].value;
         const fecha = e.target[3].value;
 
-        fetch(ENDPOINT + 'turnos/admin',{
+        fetch(ENDPOINT + 'turnos/admin/actualizar',{
             method: "POST",
             body: JSON.stringify({
                 id,

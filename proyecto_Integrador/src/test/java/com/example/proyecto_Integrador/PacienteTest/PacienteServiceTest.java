@@ -30,9 +30,8 @@ public class PacienteServiceTest {
     @Test
     @Order(2)
     public void actualizarPaciente () {
-        Domicilio domicilio = new Domicilio("salterain", 1231, "montevideo", "montevideo");
-        Paciente paciente = new Paciente("Agustin", "Ferres", "4951032", LocalDate.of(2022,11,13), domicilio, "prueba@gmail.com");
-        pacienteService.guardar(paciente);
+        Domicilio domicilio = new Domicilio(1L,"salterain", 1231, "montevideo", "montevideo");
+        Paciente paciente = new Paciente(1L,"Agustin", "Ferres", "4951032", LocalDate.of(2022,11,13), domicilio, "prueba@gmail.com");
         pacienteService.actualizar(paciente);
 
         List<Paciente> resultadoActual = pacienteService.buscarTodos();

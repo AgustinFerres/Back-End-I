@@ -1,7 +1,6 @@
 package com.example.proyecto_Integrador.controller;
 
 import com.example.proyecto_Integrador.DTO.TurnoDTO;
-import com.example.proyecto_Integrador.entity.Turno;
 import com.example.proyecto_Integrador.exception.BadRequestException;
 import com.example.proyecto_Integrador.exception.ResourceNotFoundException;
 import com.example.proyecto_Integrador.service.OdontologoService;
@@ -12,7 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.annotation.security.RolesAllowed;
 import java.util.List;
 import java.util.Optional;
 
@@ -48,7 +46,7 @@ public class TurnoController {
         }
         throw new ResourceNotFoundException("No existe turno de id = " + id + " en la base de datos");
     }
-    @PutMapping("/admin")
+    @PutMapping("/admin/actualizar")
     public ResponseEntity<String> actualizar (@RequestBody TurnoDTO turnoDTO) throws BadRequestException, ResourceNotFoundException {
         logger.info("Se inicio una peticion para actualizr un turno");
 

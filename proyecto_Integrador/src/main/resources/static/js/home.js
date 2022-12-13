@@ -69,17 +69,14 @@ window.addEventListener('load', () => {
         const crearArticle = (arr) => {
 
 
-            arr.forEach(async turno => {
+            arr.forEach( turno => {
 
-                const odontologo = await fetch(ENDPOINT + `odontologos/admin/buscar?id=${turno.idOdontologo}`).then(res => res.json()).then(data => data).catch(err => console.log(err))
-
-                const paciente = await fetch(ENDPOINT + `pacientes/admin/buscar?id=${turno.idPaciente}`).then(res => res.json()).then(data => data).catch(err => console.log(err))
 
                 turnoSection.innerHTML += `
                     <article >
                         <div>
-                            <h2> ${odontologo.nombre} ${odontologo.apellido} | nº: ${odontologo.matricula}</h2>
-                            <p> paciente: ${paciente.nombre} ${paciente.apellido}</p>
+                            <h2> Id Odontologo ${turno.idOdontologo}</h2>
+                            <p> Id Paciente: ${turno.idPaciente}</p>
                             <p> ${turno.fecha}<p/>
                         </div>
                     </article>

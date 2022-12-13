@@ -1,9 +1,7 @@
 package com.example.proyecto_Integrador.repository;
 
 import com.example.proyecto_Integrador.entity.Odontologo;
-import com.example.proyecto_Integrador.entity.Paciente;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
 
 import java.util.Optional;
 

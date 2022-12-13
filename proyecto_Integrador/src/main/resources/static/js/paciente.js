@@ -49,7 +49,7 @@ window.addEventListener('load', () => {
 
 
     /* -------------------------------------------------------------------------- */
-    /*                                SELECT BY ID                                */
+    /*                                SELECT BY EMAIL                                */
     /* -------------------------------------------------------------------------- */
     const getPaciente = (e) => {
 
@@ -83,7 +83,7 @@ window.addEventListener('load', () => {
         }
 
         fetch(ENDPOINT + `pacientes/admin/buscar/mail?email=${email}`)
-        .then(res => res => res.status === 403 ? location.replace("/pages/notAllowed.html") : res.json())
+        .then(res => res.status === 403 ? location.replace("/pages/notAllowed.html") : res.json())
         .then(data => {
             pacienteBuscadoSection.removeAttribute('id')
             crearArticle(data);
